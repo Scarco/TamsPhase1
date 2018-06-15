@@ -1,0 +1,301 @@
+<html>
+<head>
+    <% include ../../../views/templates/head %>
+</head>
+
+<body class="page-header-fixed page-sidebar-closed-hide-logo page-container-bg-solid">
+       <% include ../../../views/templates/header %>
+      
+        <div class="page-container">
+            <!-- BEGIN SIDEBAR -->
+            <% include ../../../views/templates/Menu %>
+                <!-- END SIDEBAR -->
+                <!-- BEGIN CONTENT -->
+                <div class="page-content-wrapper">
+                    <!-- BEGIN CONTENT BODY -->
+                    <div class="page-content">
+                        <!-- BEGIN PAGE HEADER-->
+                        <!-- BEGIN THEME PANEL -->
+        
+                        <!-- END THEME PANEL -->
+                        <h1 class="page-title"></h1>
+                        <h2>NY Congestion Charge Listing</h2>
+                        <div class="page-bar">
+                            <ul class="page-breadcrumb">
+                                <li>
+                                    <i class="icon-home"></i>
+                                    <a href="index.html">Dashboard</a>
+                                    <i class="fa fa-angle-right"></i>
+                                </li>
+                                <li>
+                                    <span>NY Congestion Charge Listing</span>
+                                </li>
+                            </ul>
+        
+                        </div>
+        
+        
+                        <div class="portlet">
+        
+                            <div class="tools">
+                                <a href="javascript:;" class="collapse" data-original-title="" title=""> </a>
+                                <a href="#portlet-config" data-toggle="modal" class="config" data-original-title="" title=""> </a>
+                                <a href="javascript:;" class="reload" data-original-title="" title=""> </a>
+                                <a href="javascript:;" class="remove" data-original-title="" title=""> </a>
+                            </div>
+                        </div>
+                        <div class="portlet light portlet-fit portlet-datatable ">
+                            <div class="portlet-title">
+        
+        
+                            </div>
+                            <div class="portlet-body">
+                                <div class="table-container" style="">
+        
+                                    <div id="datatable_orders_wrapper" class="dataTables_wrapper dataTables_extended_wrapper no-footer">
+                                        <div class="row">
+                                            <div class="col-md-8 col-sm-12">
+                                                <div class="dataTables_paginate paging_bootstrap_extended" id="datatable_orders_paginate">
+                                                    <div class="pagination-panel"> Page <a href="#" class="btn btn-sm default prev disabled"><i class="fa fa-angle-left"></i></a>
+                                                        <input type="text" class="pagination-panel-input form-control input-sm input-inline input-mini" maxlenght="5" style="text-align:center; margin: 0 5px;"><a href="#" class="btn btn-sm default next disabled"><i class="fa fa-angle-right"></i></a> of <span class="pagination-panel-total"></span></div>
+                                                </div>
+                                                <div class="dataTables_length" id="datatable_orders_length">
+                                                    <label><span class="seperator">|</span>View
+                                                        <select name="datatable_orders_length" aria-controls="datatable_orders" class="form-control input-xs input-sm input-inline">
+                                                            <option value="10">10</option>
+                                                            <option value="20">20</option>
+                                                            <option value="50">50</option>
+                                                            <option value="100">100</option>
+                                                            <option value="150">150</option>
+                                                            <option value="-1">All</option>
+                                                        </select> records</label>
+                                                </div>
+                                                <div class="dataTables_info" id="datatable_orders_info" role="status" aria-live="polite"></div>
+                                            </div>
+                                            <div class="col-md-4 col-sm-12">
+                                                <div class="table-group-actions pull-right">
+                                                    <span></span>
+        
+                                                    <input type="text" class="table-group-action-input form-control input-inline input-small input-sm" name="order_invoice_bill_to" placeholder="Search...">
+                                                    <button class="btn btn-sm yellow filter-submit margin-bottom">
+                                                        <i class="fa fa-search"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="table-responsive">
+                                            <table class="table table-striped table-bordered table-hover table-checkable dataTable no-footer" id="datatable_orders" aria-describedby="datatable_orders_info" role="grid">
+                                                <thead>
+                                                    <tr role="row" class="heading">
+                                                        <th width="5%" class="sorting" tabindex="0" aria-controls="datatable_orders" rowspan="1" colspan="1"> S.No </th>
+                                                        <th width="10%" class="sorting" tabindex="0" aria-controls="datatable_orders" rowspan="1" colspan="1"> Zipcode </th>
+                                                        <th width="10%" class="sorting" tabindex="0" aria-controls="datatable_orders" rowspan="1" colspan="1"> Charge</th>
+                                                        <th width="10%" class="sorting" tabindex="0" aria-controls="datatable_orders" rowspan="1" colspan="1"> Status</th>
+        
+                                                        <th width="10%" class="sorting" tabindex="0" aria-controls="datatable_orders" rowspan="1" colspan="1"> Actions </th>
+                                                    </tr>
+                                                    <tr role="row" class="filter">
+                                                        <td rowspan="1" colspan="1">
+                                                            <input type="text" class="form-control form-filter input-sm" name="order_ship_to">
+                                                        </td>
+                                                        <td rowspan="1" colspan="1">
+                                                            <input type="text" class="form-control form-filter input-sm" name="order_ship_to">
+                                                        </td>
+                                                        <td rowspan="1" colspan="1">
+                                                            <input type="text" class="form-control form-filter input-sm" name="order_ship_to">
+                                                        </td>
+        
+                                                        <td rowspan="1" colspan="1">
+                                                            <select name="order_status" class="form-control form-filter input-sm">
+                                                                <option value="">Select...</option>
+                                                                <option value="pending">Active</option>
+                                                                <option value="closed">In Active</option>
+                                                            </select>
+                                                        </td>
+        
+                                                        <td rowspan="1" colspan="1">
+                                                            <div class="margin-bottom-5">
+                                                                <button class="btn btn-sm btn-success filter-submit margin-bottom">
+                                                                    <i class="fa fa-search"></i> Search
+                                                                </button>
+                                                            </div>
+                                                            <button class="btn btn-sm btn-default filter-cancel">
+                                                                <i class="fa fa-times"></i> Reset
+                                                            </button>
+                                                        </td>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>34567</td>
+                                                        <td>800</td>
+                                                        <td><span class="label label-sm label-success"> Active </span></td>
+        
+                                                        <td>
+                                                            <a class="btn btn-outline btn-circle btn-sm purple dark btn-outline sbold" data-toggle="modal" href="#large">
+                                                                <i class="fa fa-edit"></i> Edit
+                                                            </a>
+                                                            <a href="#" onclick="Delete()" class="btn btn-outline btn-circle dark btn-sm black">
+                                                                <i class="fa fa-trash-o"></i> Delete
+                                                            </a>
+                                                        </td>
+        
+        
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td>78567</td>
+                                                        <td>100 </td>
+                                                        <td><span class="label label-sm label-danger">In Active</span></td>
+        
+                                                        <td>
+                                                            <a class="btn btn-outline btn-circle btn-sm purple dark btn-outline sbold" data-toggle="modal" href="#large">
+                                                                <i class="fa fa-edit"></i> Edit
+                                                            </a>
+                                                            <a href="#" onclick="Delete()" class="btn btn-outline btn-circle dark btn-sm black">
+                                                                <i class="fa fa-trash-o"></i> Delete
+                                                            </a>
+                                                        </td>
+        
+        
+                                                    </tr>
+                                                    <tr>
+                                                        <td>3</td>
+                                                        <td>23456</td>
+                                                        <td>200 </td>
+                                                        <td><span class="label label-sm label-success"> Active </span></td>
+        
+                                                        <td>
+                                                            <a class="btn btn-outline btn-circle btn-sm purple dark btn-outline sbold" data-toggle="modal" href="#large">
+                                                                <i class="fa fa-edit"></i> Edit
+                                                            </a>
+                                                            <a href="#" onclick="Delete()" class="btn btn-outline btn-circle dark btn-sm black">
+                                                                <i class="fa fa-trash-o"></i> Delete
+                                                            </a>
+                                                        </td>
+        
+        
+                                                    </tr>
+                                                    <tr>
+                                                        <td>4</td>
+                                                        <td>23456</td>
+                                                        <td>100 </td>
+                                                        <td><span class="label label-sm label-danger">In Active</span></td>
+        
+                                                        <td>
+                                                            <a class="btn btn-outline btn-circle btn-sm purple dark btn-outline sbold" data-toggle="modal" href="#large">
+                                                                <i class="fa fa-edit"></i> Edit
+                                                            </a>
+                                                            <a href="#" onclick="Delete()" class="btn btn-outline btn-circle dark btn-sm black">
+                                                                <i class="fa fa-trash-o"></i> Delete
+                                                            </a>
+                                                        </td>
+        
+        
+                                                    </tr>
+        
+        
+        
+        
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-8 col-sm-12">
+                                                <div class="dataTables_paginate paging_bootstrap_extended">
+                                                    <div class="pagination-panel"> Page <a href="#" class="btn btn-sm default prev disabled"><i class="fa fa-angle-left"></i></a>
+                                                        <input type="text" class="pagination-panel-input form-control input-sm input-inline input-mini" maxlenght="5" style="text-align:center; margin: 0 5px;"><a href="#" class="btn btn-sm default next disabled"><i class="fa fa-angle-right"></i></a> of <span class="pagination-panel-total"></span></div>
+                                                </div>
+                                                <div class="dataTables_length">
+                                                    <label><span class="seperator">|</span>View
+                                                        <select name="datatable_orders_length" aria-controls="datatable_orders" class="form-control input-xs input-sm input-inline">
+                                                            <option value="10">10</option>
+                                                            <option value="20">20</option>
+                                                            <option value="50">50</option>
+                                                            <option value="100">100</option>
+                                                            <option value="150">150</option>
+                                                            <option value="-1">All</option>
+                                                        </select> records</label>
+                                                </div>
+                                                <div class="dataTables_info"></div>
+                                            </div>
+                                            <div class="col-md-4 col-sm-12"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+        
+        
+                        <!-- END QUICK SIDEBAR -->
+        
+                        <div class="modal fade bs-modal-lg" id="large" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                                        <h4 class="modal-title">Edit NY Congestion Charge</h4>
+                                    </div>
+        
+        
+                                    <div class="portlet-body form">
+                                        <!-- BEGIN FORM-->
+                                        <form action="#" class="form-horizontal">
+                                            <div class="form-body">
+        
+        
+                                                <div class="form-group">
+        
+                                                    <label class="col-md-2 control-label"> Zipcode</label>
+                                                    <div class="col-md-3">
+                                                        <input type="text" class="form-control" value="56785">
+                                                    </div>
+                                                    <label class="col-md-2 control-label"> Charge</label>
+                                                    <div class="col-md-3">
+                                                        <input type="text" class="form-control" value="100">
+                                                    </div>
+                                                </div>
+        
+                                                <div class="form-group">
+                                                    <label class="col-md-2 control-label"> Status</label>
+                                                    <div class="col-md-3">
+        
+                                                        <select class="form-control" id="Vendor Name" name="Vendor Name">
+                                                            <option>Active</option>
+                                                            <option>In Active</option>
+                                                        </select>
+                                                    </div>
+        
+        
+                                                </div>
+        
+        
+                                                <br />
+                                                <br />
+        
+                                                <div class="form-actions">
+                                                    <div class="row">
+                                                        <div class="col-md-offset-5 col-md-30">
+                                                            <a href="#" onclick="Update()" class="btn btn-circle green"> Update</a>
+                                                            <button type="button" class="btn btn-circle grey-salsa btn-outline " data-dismiss="modal" aria-hidden="true">Cancel</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                        <!-- END FORM-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                 <!-- END CONTENT -->
+        </div>
+
+</body>
+
+<% include ../../../views/templates/footer %>
+<% include ../../../views/templates/includes %>
+
+</html>

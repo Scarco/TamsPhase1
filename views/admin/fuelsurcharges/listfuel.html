@@ -1,0 +1,136 @@
+<html>
+<head>
+    <% include ../../../views/templates/head %>
+</head>
+
+<body class="page-header-fixed page-sidebar-closed-hide-logo page-container-bg-solid">
+       <% include ../../../views/templates/header %>
+      
+        <div class="page-container">
+            <!-- BEGIN SIDEBAR -->
+            <% include ../../../views/templates/Menu %>
+                <!-- END SIDEBAR -->
+                <!-- BEGIN CONTENT -->
+                <div class="page-content-wrapper">
+                    <!-- BEGIN CONTENT BODY -->
+                   <!-- BEGIN CONTENT BODY -->
+            <div class="page-content">
+                <!-- BEGIN PAGE HEADER-->
+                <!-- BEGIN THEME PANEL -->
+               
+                <!-- END THEME PANEL -->
+                <h1 class="page-title"></h1>
+                <h2>Fuel Surcharges Listing</h2>
+                <div class="page-bar">
+                    <ul class="page-breadcrumb">
+                        <li>
+                            <i class="icon-home"></i>
+                            <a href="index.html">Dashboard</a>
+                            <i class="fa fa-angle-right"></i>
+                        </li>
+                        <li>
+                            <span> Fuel Surcharges Listing</span>
+                        </li>
+                    </ul>
+
+                </div>
+
+
+                <div class="portlet">
+                    <div class="portlet light portlet-fit portlet-datatable ">  
+                        
+                        </div>         
+                        <div class="portlet-body">
+                            <div class="table-container" >
+                                    <% include ../../../views/templates/pagination %>
+                            <div id="fuelsurchargesgrid"></div>
+                            <% include ../../../views/templates/paginationfooter %>
+
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- END QUICK SIDEBAR -->
+                </div>
+
+                <div class="modal fade bs-modal-lg" id="large" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                                <h4 class="modal-title">Edit Fuel Surcharges </h4>
+                            </div>
+
+
+                            <div class="portlet-body form">
+                                <!-- BEGIN FORM-->
+                                <form action="#" class="form-horizontal">
+                                    <div class="form-body">
+
+                                        <div class="form-group">
+                                            <label class="control-label col-md-2">
+                                               From Price
+                                                <span class="required" aria-required="true"> * </span>
+                                            </label>
+                                            <div class="col-md-3">
+                                                <input type="text" class="form-control" name="quantity" id="quantity" value="1000">
+                                                <span class="help-block"> Provide From Price. </span>
+                                            </div>
+                                            <label class="control-label col-md-2">
+                                                To Price
+                                                <span class="required" aria-required="true"> * </span>
+                                            </label>
+                                            <div class="col-md-3">
+                                                <input type="text" class="form-control" name="quantity" id="quantity" value="2000">
+                                                <span class="help-block"> Provide To Price. </span>
+                                            </div>
+
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label col-md-2">
+                                                Fuel Surcharge
+                                                <span class="required" aria-required="true"> * </span>
+                                            </label>
+                                            <div class="col-md-3">
+                                                <input type="text" class="form-control" name="quantity" id="quantity" value="100">
+                                                <span class="help-block"> Provide FSC Per Mile. </span>
+                                            </div>
+                                            
+
+                                        </div>
+                                    
+
+
+
+                                        <br />
+                                        <br />
+
+                                        <div class="form-actions">
+                                            <div class="row">
+                                                <div class="col-md-offset-5 col-md-30">
+                                                    <a href="#" onclick="Update()" class="btn btn-circle green"> Update</a>
+                                                    <button type="button" class="btn btn-circle grey-salsa btn-outline " data-dismiss="modal" aria-hidden="true">Cancel</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                                <!-- END FORM-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- END QUICK SIDEBAR -->
+                </div>
+                 <!-- END CONTENT -->
+        </div>
+
+</body>
+
+<% include ../../../views/templates/footer %>
+<% include ../../../views/templates/includes %>
+<script src="js/fuelsurcharges.js"></script>
+</html>

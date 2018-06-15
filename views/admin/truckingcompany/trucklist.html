@@ -1,0 +1,618 @@
+<html>
+<head>
+    <% include ../../../views/templates/head %>
+</head>
+
+<body class="page-header-fixed page-sidebar-closed-hide-logo page-container-bg-solid">
+       <% include ../../../views/templates/header %>
+      
+        <div class="page-container">
+            <!-- BEGIN SIDEBAR -->
+            <% include ../../views/templates/Menu %>
+                <!-- END SIDEBAR -->
+                <!-- BEGIN CONTENT -->
+                <div class="page-content-wrapper">
+                    <!-- BEGIN CONTENT BODY -->
+                   <div class="page-content">
+                <!-- BEGIN PAGE HEADER-->
+                <!-- BEGIN THEME PANEL -->
+                <!-- END THEME PANEL -->
+                <h1 class="page-title"></h1>
+                <h2>Trucking Companies Listing</h2>
+                <div class="page-bar">
+                    <ul class="page-breadcrumb">
+                        <li>
+                            <i class="icon-home"></i>
+                            <a href="index.html">Dashboard</a>
+                            <i class="fa fa-angle-right"></i>
+                        </li>
+                        <li>
+                            <span>Trucking Companies Listing</span>
+                        </li>
+                    </ul>
+
+                </div>
+
+
+                <div class="portlet">
+                    <div class="portlet light portlet-fit portlet-datatable ">
+                        <div class="portlet-title">
+
+
+                        </div>
+                        <div class="portlet-body">
+                            <div class="table-container">
+
+                                  
+    
+                                    <div class="row">
+                                        <div class="col-md-8 col-sm-12"><div class="dataTables_paginate paging_bootstrap_extended" id="datatable_orders_paginate"><div class="pagination-panel"> Page <a href="#" class="btn btn-sm default prev disabled"><i class="fa fa-angle-left"></i></a><input type="text" class="pagination-panel-input form-control input-sm input-inline input-mini" maxlenght="5" style="text-align:center; margin: 0 5px;"><a href="#" class="btn btn-sm default next disabled"><i class="fa fa-angle-right"></i></a> of <span class="pagination-panel-total"></span></div></div><div class="dataTables_length" id="datatable_orders_length"><label><span class="seperator">|</span>View <select name="datatable_orders_length" aria-controls="datatable_orders" class="form-control input-xs input-sm input-inline"><option value="10">10</option><option value="20">20</option><option value="50">50</option><option value="100">100</option><option value="150">150</option><option value="-1">All</option></select> records</label></div><div class="dataTables_info" id="datatable_orders_info" role="status" aria-live="polite"></div></div><div class="col-md-4 col-sm-12">
+                                            <div class="table-group-actions pull-right">
+                                                <span></span>
+
+                                                <input type="text" class="table-group-action-input form-control input-inline input-small input-sm" name="order_invoice_bill_to" placeholder="Search...">
+                                                <button class="btn btn-sm yellow filter-submit margin-bottom">
+                                                    <i class="fa fa-search"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div><div class="table-responsive">
+                                        <table class="table table-striped table-bordered table-hover table-checkable dataTable no-footer" id="datatable_orders" aria-describedby="datatable_orders_info" role="grid">
+                                            <thead>
+                                                <tr role="row" class="heading">
+                                                    <th width="10%" class="sorting" tabindex="0" aria-controls="datatable_orders" rowspan="1" colspan="1"> Company Name </th>
+                                                    <th width="10%" class="sorting" tabindex="0" aria-controls="datatable_orders" rowspan="1" colspan="1"> Email </th>
+                                                    <th width="10%" class="sorting" tabindex="0" aria-controls="datatable_orders" rowspan="1" colspan="1"> Phone </th>
+                                                    <th width="10%" class="sorting" tabindex="0" aria-controls="datatable_orders" rowspan="1" colspan="1"> MC Number </th>
+                                                    <th width="10%" class="sorting" tabindex="0" aria-controls="datatable_orders" rowspan="1" colspan="1"> Tax ID </th>
+                                                    <th width="10%" class="sorting" tabindex="0" aria-controls="datatable_orders" rowspan="1" colspan="1"> Status</th>
+
+                                                    <th width="30%" class="sorting" tabindex="0" aria-controls="datatable_orders" rowspan="1" colspan="1"> Actions </th>
+                                                </tr>
+                                                <tr role="row" class="filter">
+                                                    <td rowspan="1" colspan="1">
+                                                        <input type="text" class="form-control form-filter input-sm" name="order_ship_to">
+                                                    </td>
+                                                    <td rowspan="1" colspan="1">
+                                                        <input type="text" class="form-control form-filter input-sm" name="order_ship_to">
+                                                    </td>
+                                                    <td rowspan="1" colspan="1">
+                                                        <input type="text" class="form-control form-filter input-sm" name="order_ship_to">
+                                                    </td>
+                                                    <td rowspan="1" colspan="1">
+                                                        <input type="text" class="form-control form-filter input-sm" name="order_ship_to">
+                                                    </td>
+                                                    <td rowspan="1" colspan="1">
+                                                        <input type="text" class="form-control form-filter input-sm" name="order_ship_to">
+                                                    </td>
+                                                    <td rowspan="1" colspan="1">
+                                                        <select name="order_status" class="form-control form-filter input-sm">
+                                                            <option value="">Select...</option>
+                                                            <option value="pending">Active</option>
+                                                            <option value="closed">In Active</option>
+                                                        </select>
+                                                    </td>
+
+                                                    <td rowspan="1" colspan="1">
+                                                        <div class="margin-bottom-5">
+                                                            <button class="btn btn-sm btn-success filter-submit margin-bottom">
+                                                                <i class="fa fa-search"></i> Search
+                                                            </button>
+                                                            <button class="btn btn-sm btn-default filter-cancel">
+                                                                <i class="fa fa-times"></i> Reset
+                                                            </button>
+                                                        </div>
+                                                     
+                                                    </td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Company 1</td>
+                                                    <td>John@gmail.com</td>
+                                                    <td>9751266816</td>
+                                                    <td>10045</td>
+                                                    <td>0001 </td>
+                                                    <td><span class="label label-sm label-success"> Active </span></td>
+
+                                                    <td>
+                                                        <a class="btn btn-outline btn-circle btn-sm purple dark btn-outline sbold" data-toggle="modal" href="#large">
+                                                            <i class="fa fa-edit"></i> Edit
+                                                        </a>
+                                                        <a href="#" onclick="Delete()" class="btn btn-outline btn-circle dark btn-sm black">
+                                                            <i class="fa fa-trash-o"></i> Delete
+                                                        </a>
+                                                        <a class="btn btn-outline btn-circle btn-sm blue" href="Add_Truck.html">
+                                                            <i class="fa fa-edit"></i>  Drivers
+                                                        </a>
+                                                        <a class="btn btn-outline btn-circle btn-sm blue" href="Admin_Pricing.html">
+                                                            <i class="fa fa-edit"></i>  Pricing table
+                                                        </a>
+                                                        <a class="btn btn-outline btn-circle btn-sm blue" href="Add_Job_Coordinator.html">
+                                                            <i class="fa fa-edit"></i>  Job Coordinators
+                                                        </a>
+                                                    </td>
+
+
+                                                </tr>
+                                                <tr>
+                                                    <td>Company 2</td>
+                                                    <td>Jock@gmail.com</td>
+                                                    <td>9751266816</td>
+                                                    <td>10045</td>
+                                                    <td>0002 </td>
+                                                    <td><span class="label label-sm label-danger">In Active</span></td>
+
+                                                    <td>
+                                                        <a class="btn btn-outline btn-circle btn-sm purple dark btn-outline sbold" data-toggle="modal" href="#large">
+                                                            <i class="fa fa-edit"></i> Edit
+                                                        </a>
+                                                        <a href="#" onclick="Delete()" class="btn btn-outline btn-circle dark btn-sm black">
+                                                            <i class="fa fa-trash-o"></i> Delete
+                                                        </a>
+                                                        <a class="btn btn-outline btn-circle btn-sm blue" href="Add_Truck.html">
+                                                            <i class="fa fa-edit"></i>  Drivers
+                                                        </a>
+                                                        <a class="btn btn-outline btn-circle btn-sm blue" href="Admin_Pricing.html">
+                                                            <i class="fa fa-edit"></i>  Pricing table
+                                                        </a>
+                                                    </td>
+
+
+                                                </tr>
+                                                <tr>
+                                                    <td>Company 3</td>
+                                                    <td>Don@gmail.com</td>
+                                                    <td>9751266816</td>
+                                                    <td>10045</td>
+                                                    <td>0003 </td>
+                                                    <td><span class="label label-sm label-success"> Active </span></td>
+
+                                                    <td>
+                                                        <a class="btn btn-outline btn-circle btn-sm purple dark btn-outline sbold" data-toggle="modal" href="#large">
+                                                            <i class="fa fa-edit"></i> Edit
+                                                        </a>
+                                                        <a href="#" onclick="Delete()" class="btn btn-outline btn-circle dark btn-sm black">
+                                                            <i class="fa fa-trash-o"></i> Delete
+                                                        </a>
+                                                        <a class="btn btn-outline btn-circle btn-sm blue" href="Add_Truck.html">
+                                                            <i class="fa fa-edit"></i>  Drivers
+                                                        </a>
+                                                        <a class="btn btn-outline btn-circle btn-sm blue" href="Admin_Pricing.html">
+                                                            <i class="fa fa-edit"></i>  Pricing table
+                                                        </a>
+                                                        <a class="btn btn-outline btn-circle btn-sm blue" href="Add_Job_Coordinator.html">
+                                                            <i class="fa fa-edit"></i> job coordinators
+                                                        </a>
+                                                    </td>
+
+
+                                                </tr>
+                                                <tr>
+                                                    <td>Company 4</td>
+                                                    <td>Aaron@gmail.com</td>
+                                                    <td>9751266816</td>
+                                                    <td>10045</td>
+                                                    <td>0004 </td>
+                                                    <td><span class="label label-sm label-danger">In Active</span></td>
+
+                                                    <td>
+                                                        <a class="btn btn-outline btn-circle btn-sm purple dark btn-outline sbold" data-toggle="modal" href="#large">
+                                                            <i class="fa fa-edit"></i> Edit
+                                                        </a>
+                                                        <a href="#" onclick="Delete()" class="btn btn-outline btn-circle dark btn-sm black">
+                                                            <i class="fa fa-trash-o"></i> Delete
+                                                        </a>
+                                                        <a class="btn btn-outline btn-circle btn-sm blue" href="Add_Truck.html">
+                                                            <i class="fa fa-edit"></i>  Drivers
+                                                        </a>
+                                                        <a class="btn btn-outline btn-circle btn-sm blue" href="Admin_Pricing.html">
+                                                            <i class="fa fa-edit"></i>  Pricing table
+                                                        </a>
+                                                    </td>
+
+
+                                                </tr>
+
+
+
+
+                                            </tbody>
+                                        </table>
+                                    </div><div class="row"><div class="col-md-8 col-sm-12"><div class="dataTables_paginate paging_bootstrap_extended"><div class="pagination-panel"> Page <a href="#" class="btn btn-sm default prev disabled"><i class="fa fa-angle-left"></i></a><input type="text" class="pagination-panel-input form-control input-sm input-inline input-mini" maxlenght="5" style="text-align:center; margin: 0 5px;"><a href="#" class="btn btn-sm default next disabled"><i class="fa fa-angle-right"></i></a> of <span class="pagination-panel-total"></span></div></div><div class="dataTables_length"><label><span class="seperator">|</span>View <select name="datatable_orders_length" aria-controls="datatable_orders" class="form-control input-xs input-sm input-inline"><option value="10">10</option><option value="20">20</option><option value="50">50</option><option value="100">100</option><option value="150">150</option><option value="-1">All</option></select> records</label></div><div class="dataTables_info"></div></div><div class="col-md-4 col-sm-12"></div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- END QUICK SIDEBAR -->
+                </div>
+
+                <div class="modal fade bs-modal-lg" id="large" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                                <h4 class="modal-title">Trucking Company Details</h4>
+                            </div>
+
+
+                            <div class="portlet-body form">
+                                <!-- BEGIN FORM-->
+                                <form action="#" class="form-horizontal">
+                                    <div class="form-body">
+
+                                        <div class="form-group">
+                                            <label class="control-label col-md-2">
+                                                Company Name
+                                                <span class="required" aria-required="true"> * </span>
+                                            </label>
+                                            <div class="col-md-3">
+                                                <input type="text" class="form-control" name="quantity" id="quantity" value="Scarco">
+                                                <span class="help-block"> Provide Company Name. </span>
+                                            </div>
+                                            <label class="control-label col-md-2">
+                                                Contact person
+                                                <span class="required" aria-required="true"> * </span>
+                                            </label>
+                                            <div class="col-md-3">
+                                                <input type="text" class="form-control" name="quantity" id="quantity" value="John">
+                                                <span class="help-block"> Provide Your Name. </span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label col-md-2">
+                                                Email
+                                                <span class="required" aria-required="true"> * </span>
+                                            </label>
+                                            <div class="col-md-3">
+                                                <input type="text" class="form-control" name="quantity" id="quantity" value="john@gmail.com">
+                                                <span class="help-block"> Provide Your Email. </span>
+                                            </div>
+                                            <label class="control-label col-md-2">
+                                                Phone
+                                                <span class="required" aria-required="true"> * </span>
+                                            </label>
+                                            <div class="col-md-3">
+                                                <input type="text" class="form-control" name="quantity" id="quantity" value="9696584748">
+                                                <span class="help-block"> Provide Your Phone. </span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label col-md-2">
+                                                MC Number
+                                                <span class="required" aria-required="true"> * </span>
+                                            </label>
+                                            <div class="col-md-3">
+                                                <input type="text" class="form-control" name="quantity" id="quantity" value="1002">
+                                                <span class="help-block"> Provide Your MC Number. </span>
+                                            </div>
+                                            <label class="control-label col-md-2">
+                                                Tax ID
+                                                <span class="required" aria-required="true"> * </span>
+                                            </label>
+                                            <div class="col-md-3">
+                                                <input type="text" class="form-control" name="quantity" id="quantity" value="123">
+                                                <span class="help-block"> Provide Your Tax Id. </span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label col-md-2">
+                                                Address
+
+                                            </label>
+                                            <div class="col-md-3">
+                                                <input type="text" class="form-control" name="password1" id="submit_form_password1" value="300 New York 300, NEW WINDSOR, NY, ORANGE, 12553">
+                                                <span class="help-block"> Provide your Address. </span>
+                                            </div>
+                                            <label class="control-label col-md-2">
+                                                City
+
+                                            </label>
+                                            <div class="col-md-3">
+                                                <input type="text" class="form-control" name="City1" id="submit_form_password1" value="New windson">
+                                                <span class="help-block"> Provide your City </span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label col-md-2">
+                                                State
+
+                                            </label>
+                                            <div class="col-md-3">
+                                                <input type="Text" class="form-control" name="State" value="NY">
+                                                <span class="help-block"> Provide your State </span>
+                                            </div>
+                                            <label class="control-label col-md-2">
+                                                County
+
+                                            </label>
+                                            <div class="col-md-3">
+                                                <input type="Text" class="form-control" name="County" value="Orange">
+                                                <span class="help-block"> Provide your County </span>
+                                            </div>
+                                        </div>
+                                        <br />
+                                        <br />
+
+                                        <div class="form-actions">
+                                            <div class="row">
+                                                <div class="col-md-offset-5 col-md-30">
+                                                    <a href="#" onclick="Update()" class="btn btn-circle green"> Update</a>
+                                                    <button type="button" class="btn btn-circle grey-salsa btn-outline " data-dismiss="modal" aria-hidden="true">Cancel</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                                <!-- END FORM-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade bs-modal-lg" id="large" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                                <h4 class="modal-title">Edit Job Coordinator </h4>
+                            </div>
+
+                            <div class="portlet-body form">
+                                <!-- BEGIN FORM-->
+                                <form action="#" class="form-horizontal">
+                                    <div class="form-body">
+
+                                        <div class="form-group">
+                                            <label class="control-label col-md-2">
+                                                Job Coordinator Name
+                                                <span class="required" aria-required="true"> * </span>
+                                            </label>
+                                            <div class="col-md-3">
+                                                <input type="text" class="form-control" name="quantity" id="quantity">
+                                                <span class="help-block"> Provide Job Coordinator Name. </span>
+                                            </div>
+                                            <label class="control-label col-md-2">
+                                                Rates
+                                                <span class="required" aria-required="true"> * </span>
+                                            </label>
+                                            <div class="col-md-3">
+                                                <input type="text" class="form-control" name="quantity" id="quantity">
+                                                <span class="help-block"> Provide Rates per Hour. </span>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label class="control-label col-md-2">
+                                                Email
+                                                <span class="required" aria-required="true"> * </span>
+                                            </label>
+                                            <div class="col-md-3">
+                                                <input type="text" class="form-control" name="quantity" id="quantity">
+                                                <span class="help-block"> Provide Your Email. </span>
+                                            </div>
+                                            <label class="control-label col-md-2">
+                                                Password
+                                                <span class="required" aria-required="true"> * </span>
+                                            </label>
+                                            <div class="col-md-3">
+                                                <input type="text" class="form-control" name="quantity" id="quantity">
+                                                <span class="help-block"> Provide Your Password. </span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label col-md-2">
+                                                Phone
+                                                <span class="required" aria-required="true"> * </span>
+                                            </label>
+                                            <div class="col-md-3">
+                                                <input type="text" class="form-control" name="quantity" id="quantity">
+                                                <span class="help-block"> Provide Your Phone. </span>
+                                            </div>
+                                            <label class="control-label col-md-2">
+                                                Street
+                                                <span class="required" aria-required="true"> * </span>
+                                            </label>
+                                            <div class="col-md-3">
+                                                <input type="text" class="form-control" name="quantity" id="quantity">
+                                                <span class="help-block"> Provide Your Street. </span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label col-md-2">
+                                                City
+
+                                            </label>
+                                            <div class="col-md-3">
+                                                <input type="text" class="form-control" name="password1" id="submit_form_password1">
+                                                <span class="help-block"> Provide your City. </span>
+                                            </div>
+                                            <label class="control-label col-md-2">
+                                                State
+
+                                            </label>
+                                            <div class="col-md-3">
+                                                <input type="text" class="form-control" name="City1" id="submit_form_password1">
+                                                <span class="help-block"> Provide your State </span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label col-md-2">
+                                                County
+
+                                            </label>
+                                            <div class="col-md-3">
+                                                <input type="Text" class="form-control" name="State">
+                                                <span class="help-block"> Provide your County </span>
+                                            </div>
+                                            <label class="control-label col-md-2">
+                                                Status
+                                            </label>
+                                            <div class="col-md-3">
+                                                <select name="order_status" class="form-control form-filter input-sm">
+                                                    <option value="">Select...</option>
+                                                    <option value="pending">Active</option>
+                                                    <option value="closed">In Active</option>
+                                                </select>
+                                                <span class="help-block"> Provide your Status</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br />
+                                    <br />
+
+                                    <div class="form-actions">
+                                        <div class="row">
+                                            <div class="col-md-offset-5 col-md-30">
+                                                <a href="#" onclick="Create()" class="btn btn-circle green"> Add</a>
+                                                <button type="button" class="btn btn-circle grey-salsa btn-outline " data-dismiss="modal" aria-hidden="true">Cancel</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                   
+</div>
+                                </form>
+                                <!-- END FORM-->
+                            </div>
+                        </div>
+                    </div>
+              
+
+                <div class="modal fade bs-modal-lg" id="large2" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                                <h4 class="modal-title">Pricing Table</h4>
+                            </div>
+
+                            <div class="portlet-body form">
+                                <!-- BEGIN FORM-->
+                                <form action="#" class="form-horizontal">
+                                    <div class="form-body">
+                                        <h4 class="form-section">Mileage Band</h4>
+                                        <div class="portlet-body">
+                                            <div class="table-scrollable">
+                                                <table class="table table-hover table-light">
+                                                    <thead>
+                                                        <tr>
+                                                            <th> # </th>
+                                                            <th> Milage </th>
+                                                            <th> Cost </th>
+                                                           
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td> 1 </td>
+                                                            <td> 0-25 </td>
+                                                            <td> 650 </td>
+                                                           
+                                                        </tr>
+                                                        <tr>
+                                                            <td> 2 </td>
+                                                            <td> 26-50 </td>
+                                                            <td> 700 </td>
+                                                            
+                                                        </tr>
+                                                        <tr>
+                                                            <td> 3 </td>
+                                                            <td> 51-75 </td>
+                                                            <td> 750 </td>
+                                                           
+                                                        </tr>
+                                                        <tr>
+                                                            <td> 4 </td>
+                                                            <td> 76-100 </td>
+                                                            <td> 800 </td>
+                                                            
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <br />
+                                        <br />
+                                        <h4 class="form-section">Additional Charges</h4>
+                                        <div class="portlet-body">
+                                            <div class="table-scrollable">
+                                                <table class="table table-hover table-light">
+                                                    <thead>
+                                                        <tr>
+                                                            <th> # </th>
+                                                            <th> Reson </th>
+                                                            <th> Cost </th>                                                           
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td> 1 </td>
+                                                            <td> Demurrage  </td>
+                                                            <td> 75.00 per hour </td>
+                                                           
+                                                        </tr>
+                                                        <tr>
+                                                            <td> 2 </td>
+                                                            <td> Diversion Empty </td>
+                                                            <td> 2.00 Mile </td>
+                                                            
+                                                        </tr>
+                                                       
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <br />
+                                        <br />
+                                        <h4 class="form-section">Staging/Storage System</h4>
+                                        <div class="portlet-body">
+                                            <div class="table-scrollable">
+                                                <table class="table table-hover table-light">
+                                                    <thead>
+                                                        <tr>
+                                                            <th> # </th>
+                                                            <th> First Name </th>
+                                                            <th> Last Name </th>
+                                                           
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td> 1 </td>
+                                                            <td> Trailer Storage (24 hours and less) </td>
+                                                            <td> 100.00/Day </td>
+                                                           
+                                                        </tr>
+                                                        <tr>
+                                                            <td> 2 </td>
+                                                            <td> Trailer Storage (More than 24 hours) </td>
+                                                            <td> 200.00/Day </td>
+                                                            
+                                                        </tr>
+                                                       
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+
+                                      
+                                    </div>
+                                </form>
+                                <!-- END FORM-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                </div>
+                 <!-- END CONTENT -->
+        </div>
+
+</body>
+
+<% include ../../../views/templates/footer %>
+<% include ../../../views/templates/includes %>
+
+</html>

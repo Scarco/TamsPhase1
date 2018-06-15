@@ -1,0 +1,148 @@
+<html>
+<head>
+    <% include ../../../views/templates/head %>
+</head>
+
+<body class="page-header-fixed page-sidebar-closed-hide-logo page-container-bg-solid">
+       <% include ../../../views/templates/header %>
+      
+        <div class="page-container">
+            <!-- BEGIN SIDEBAR -->
+            <% include ../../../views/templates/Menu %>
+                <!-- END SIDEBAR -->
+                <!-- BEGIN CONTENT -->
+                <div class="page-content-wrapper">
+                    <!-- BEGIN CONTENT BODY -->
+                    <div class="page-content">
+                        <!-- BEGIN PAGE HEADER-->
+                        <!-- BEGIN THEME PANEL -->
+                        <!-- END THEME PANEL -->
+                        <h1 class="page-title"></h1>
+        
+                        <h2>Products Listing</h2>
+        
+        
+                        <div class="page-bar">
+                            <ul class="page-breadcrumb">
+                                <li>
+                                    <i class="icon-home"></i>
+                                    <a href="index.html">Dashboard</a>
+                                    <i class="fa fa-angle-right"></i>
+                                </li>
+                                <li>
+                                    <span> Products Listing</span>
+                                </li>
+                            </ul>
+        
+                        </div>
+                        <div class="portlet">
+                           
+                                <div class="tools">
+                                    <a href="javascript:;" class="collapse" data-original-title="" title=""> </a>
+                                    <a href="#portlet-config" data-toggle="modal" class="config" data-original-title="" title=""> </a>
+                                    <a href="javascript:;" class="reload" data-original-title="" title=""> </a>
+                                    <a href="javascript:;" class="remove" data-original-title="" title=""> </a>
+                                </div>
+                            </div>
+                            <div class="portlet light portlet-fit portlet-datatable ">
+                                <div class="portlet-title">
+                                   
+        
+                                </div>
+                                <div class="portlet-body">
+                                    <div class="table-container">
+                                            <% include ../../../views/templates/pagination %>
+                                            <br/>
+                                            <br/>
+                                        <div id="Productgrid">
+    
+                                        </div>
+                                        <% include ../../../views/templates/paginationfooter %>
+
+                                    </div>
+                                </div>
+                            </div>
+        
+        
+                            <!-- END QUICK SIDEBAR -->
+                        </div>
+                        <div class="modal fade bs-modal-lg" id="large" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                                        <h4 class="modal-title">Product Edit</h4>
+                                    </div>
+        
+        
+                                    <div class="portlet-body form">
+                                        <!-- BEGIN FORM-->
+                                        <form action="#" class="form-horizontal">
+                                            <div class="form-body">
+        
+                                                <div class="form-group">
+        
+                                                    <label class="col-md-2 control-label">  Product Name</label>
+                                                    <div class="col-md-3">
+                                                        <input type="text" class="form-control" value="sand">
+                                                        <span class="help-block"> Product Name. </span>
+                                                    </div>
+                                                    <label class="col-md-2 control-label">  Product Type</label>
+                                                    <div class="col-md-3">
+                                                        <input type="text" class="form-control" value="100 Mesh">
+                                                        <span class="help-block">   Product Type. </span>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="col-md-2 control-label"> Unit</label>
+                                                    <div class="col-md-3">
+        
+                                                        <select class="form-control" id="Vendor Name" name="Vendor Name">
+        
+        
+                                                            <option>Pounds</option>
+                                                            <option>  Tons</option>
+                                                            <option> Gallons</option>
+        
+                                                        </select>
+        
+                                                        <span class="help-block">  Unit. </span>
+                                                    </div>
+                                                    <label class="col-md-2 control-label"> Stauts</label>
+                                                    <div class="col-md-3">
+        
+        
+                                                        <input type="checkbox" id="toggle-two">
+                                                        <span class="help-block"> Provide Status. </span>
+                                                    </div>
+        
+                                                </div>
+                                                <br />
+                                                <br />
+        
+                                                <div class="form-actions">
+                                                    <div class="row">
+                                                        <div class="col-md-offset-5 col-md-30">
+                                                            <a href="#" onclick="Update()" class="btn btn-circle green"> Update</a>
+                                                            <button type="button" class="btn btn-circle grey-salsa btn-outline " data-dismiss="modal" aria-hidden="true">Cancel</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                        <!-- END FORM-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                
+                 <!-- END CONTENT -->
+        </div>
+
+</body>
+
+<% include ../../../views/templates/footer %>
+<% include ../../../views/templates/includes %>
+<script src="js/Product.js"></script>
+</html>

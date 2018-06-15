@@ -1,0 +1,111 @@
+<html>
+<head>
+    <% include ../../../views/templates/head %>
+</head>
+
+<body class="page-header-fixed page-sidebar-closed-hide-logo page-container-bg-solid">
+       <% include ../../../views/templates/header %>
+      
+        <div class="page-container">
+            <!-- BEGIN SIDEBAR -->
+            <% include ../../../views/templates/Menu %>
+                <!-- END SIDEBAR -->
+                <!-- BEGIN CONTENT -->
+                <div class="page-content-wrapper">
+                    <!-- BEGIN CONTENT BODY -->
+                    <div class="page-content">
+                        <!-- BEGIN PAGE HEADER-->
+                        <!-- BEGIN THEME PANEL -->
+                        <!-- END THEME PANEL -->
+                        <h1 class="page-title"></h1>
+                        <h2>Add NY Congestion Charge</h2>
+                        <div class="page-bar">
+                            <ul class="page-breadcrumb">
+                                <li>
+                                    <i class="icon-home"></i>
+                                    <a href="index.html">Dashboard</a>
+                                    <i class="fa fa-angle-right"></i>
+                                </li>
+                                <li>
+                                    <span>Add NY Congestion Charge</span>
+                                </li>
+                            </ul>
+        
+                        </div>
+        
+        
+                        <div class="portlet box green">
+                            <div class="portlet-title">
+        
+                               
+                            </div>
+        
+                            <div class="portlet-body form">
+                                <!-- BEGIN FORM-->
+                                <form action="#" class="form-horizontal">
+                                    <div class="form-body">
+        
+        
+                                        <div class="form-group">
+        
+                                            <label class="col-md-2 control-label"> Zipcode</label>
+                                            <div class="col-md-3">
+                                                <input type="text" class="form-control" @*placeholder="Zip Code" *@>
+                                                <span class="title">Provide Your Zipcode</span>
+                                            </div>
+                                            <label class="col-md-2 control-label"> Charge</label>
+                                            <div class="col-md-3">
+                                                <input type="text" class="form-control" @*placeholder="Charge" *@>
+                                                <span class="title">Provide Your Charge</span>
+                                            </div>
+        
+                                        </div>
+                                        <div class="form-group">
+        
+                                            <label class="col-md-2 control-label"> Status</label>
+                                            <div class="col-md-3">
+        
+                                                <select class="form-control" id="ddlUnit" name="Unit">
+                                                    <option>Active</option>
+                                                    <option>In Active</option>
+                                                </select>
+                                                <span class="title">Provide Your Status</span>
+                                            </div>
+        
+                                        </div>
+        
+        
+        
+                                        <br />
+                                        <br />
+        
+                                        <div class="form-actions">
+                                            <div class="row">
+                                                <div class="col-md-offset-5 col-md-30">
+                                                    <a button type="submit" class="btn btn-circle green" onclick="Create()">Create</a>
+        
+                                                    <button type="button" class="btn btn-circle grey-salsa btn-outline " data-dismiss="modal" aria-hidden="true">Cancel</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                                <!-- END FORM-->
+                            </div>
+                        </div>
+        
+        
+              
+        
+                <!-- END QUICK SIDEBAR -->
+            </div>
+                </div>
+                 <!-- END CONTENT -->
+        </div>
+
+</body>
+
+<% include ../../../views/templates/footer %>
+<% include ../../../views/templates/includes %>
+
+</html>

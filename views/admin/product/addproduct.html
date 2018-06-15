@@ -1,0 +1,130 @@
+<html>
+<head>
+    <% include ../../../views/templates/head %>
+</head>
+
+<body class="page-header-fixed page-sidebar-closed-hide-logo page-container-bg-solid">
+       <% include ../../../views/templates/header %>
+      
+        <div class="page-container">
+            <!-- BEGIN SIDEBAR -->
+            <% include ../../../views/templates/Menu %>
+                <!-- END SIDEBAR -->
+                <!-- BEGIN CONTENT -->
+                <div class="page-content-wrapper">
+                    <!-- BEGIN CONTENT BODY -->
+                    <div class="page-content">
+                        <!-- BEGIN PAGE HEADER-->
+                        <!-- BEGIN THEME PANEL -->
+                        <!-- END THEME PANEL -->
+                        <h1 class="page-title"></h1>
+    
+    
+                        <h2>Add Product </h2>
+    
+    
+                        <div class="page-bar">
+                            <ul class="page-breadcrumb">
+                                <li>
+                                    <i class="icon-home"></i>
+                                    <a href="index.html">Dashboard</a>
+                                    <i class="fa fa-angle-right"></i>
+                                </li>
+                                <li>
+                                    <span>Add Product</span>
+                                </li>
+                            </ul>
+    
+                        </div>
+                        <div class="portlet box green">
+                            <div class="portlet-title">
+                                
+                               
+                            </div>
+    
+                            <div class="portlet-body form">
+                                <!-- BEGIN FORM-->
+                                <form action="/routes/Product/data" class="form-horizontal" method="post" runat="server">
+                                    <div class="form-body">
+    
+    
+                                        <div class="form-group">
+    
+                                            <label class="col-md-2 control-label">  Product Name</label>
+                                            <div class="col-md-3">
+                                                <input type="text" class="form-control" @*placeholder="Enter text" *@>
+                                                <span class="help-block"> Provide Product Name. </span>
+                                            </div>
+                                            <label class="col-md-2 control-label">  Product Type</label>
+                                            <div class="col-md-3">
+                                                <select id="multiple" class="form-control select2-multiple select2-hidden-accessible" multiple="" tabindex="-1" aria-hidden="true">
+                                                    <option value="AK"> 100 Mesh</option>
+                                                    <option value="HI">Oil</option>
+                                                    <option value="HI">Chemical</option>
+                                                </select>
+                                                <span class="help-block">Provide Product Type. </span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-md-2 control-label"> Unit</label>
+                                            <div class="col-md-3">
+    
+                                                <select class="form-control" id="ddlUnit" name="Unit">
+                                                    <option>Tons</option>
+                                                    <option>Pounds</option>
+                                                    <option>Gallons</option>
+                                                </select>
+    
+                                                <span class="help-block"> Provide Unit. </span>
+                                            </div>
+                                            <label class="col-md-2 control-label"> Status</label>
+                                            <div class="col-md-3">
+    
+    
+                                                <input type="checkbox" id="toggle-two">
+                                                <span class="help-block"> Provide Status. </span>
+                                            </div>
+                                            
+                                            </div>
+    
+    
+    
+    
+                                            <br />
+                                            <br />
+    
+                                            <div class="form-actions">
+                                                <div class="row">
+                                                    <div class="col-md-offset-5 col-md-30">
+                                                        <a button type="submit" class="btn btn-circle green">Create</a>
+    
+                                                        <button type="button" class="btn btn-circle grey-salsa btn-outline " data-dismiss="modal" aria-hidden="true">Cancel</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </form>
+                                <!-- END FORM-->
+                            </div>
+                        </div>
+    
+    
+    
+    
+    
+    
+    
+                        </h1>
+    
+                        <!-- END QUICK SIDEBAR -->
+                    </div>
+                </div>
+                 <!-- END CONTENT -->
+        </div>
+
+</body>
+
+<% include ../../../views/templates/footer %>
+<% include ../../../views/templates/includes %>
+
+</html>

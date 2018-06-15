@@ -1,0 +1,441 @@
+﻿<html>
+<head>
+    <% include ../../views/templates/head %>
+   
+</head>
+<body class="page-header-fixed page-sidebar-closed-hide-logo page-container-bg-solid">
+        <% include ../../views/templates/header %>
+    <!-- BEGIN CONTAINER -->
+    <div class="page-container">
+        <!-- BEGIN SIDEBAR -->
+        <% include ../../views/templates/Menu %>
+        <!-- END SIDEBAR -->
+        <!-- BEGIN CONTENT -->
+        <div class="page-content-wrapper">
+            <!-- BEGIN CONTENT BODY -->
+            <div class="page-content" id="divPartialViewContent">
+
+
+
+                <h1 class="page-title">
+                    Report
+                </h1>
+                <div class="page-bar">
+                    <ul class="page-breadcrumb">
+                        <li>
+                            <i class="icon-home"></i>
+                            <a href="index.html">Dashboard</a>
+                            <i class="fa fa-angle-right"></i>
+                        </li>
+                        <li>
+                            <span>Report</span>
+                        </li>
+                    </ul>
+                    <div class="page-toolbar">
+                        <div id="dashboard-report-range" class="pull-right tooltips btn btn-fit-height green" data-placement="top" data-original-title="Change dashboard date range">
+                            <i class="icon-calendar"></i>&nbsp;
+                            <span class="thin uppercase hidden-xs">April 16, 2018 - May 15, 2018</span>&nbsp;
+                            <i class="fa fa-angle-down"></i>
+                        </div>
+                    </div>
+</div>
+
+                    <div class="col-lg-12 col-xs-12 col-sm-12">
+                        <div class="search-bar bordered">
+                            <div class="row">
+                                <div class="col-lg-8">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Provide Job ID">
+                                        <span class="input-group-btn">
+                                            <button class="btn green-soft uppercase bold" id="btnDashboard" type="button">Search</button>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 extra-buttons">
+                                    <button class="btn grey-steel uppercase bold" type="button">Reset Search</button>
+                                </div>
+                            </div>
+                        </div>
+                        <br />
+
+                    </div>
+                    <div id="dashboard" style="display:none">
+                        <div class="col-md-2" style="width: 19%;">
+                            <!-- BEGIN WIDGET THUMB -->
+                            <div class="widget-thumb widget-bg-color-white text-uppercase margin-bottom-20 ">
+                                <h4 class="widget-thumb-heading">TOTAL VOLUME DESIGNED</h4>
+                                <div class="widget-thumb-wrap">
+                                    <i class="widget-thumb-icon bg-green icon-bulb"></i>
+                                    <div class="widget-thumb-body">
+
+                                        <span class="widget-thumb-body-stat" data-counter="counterup" data-value="23,199,768">23,199,768</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END WIDGET THUMB -->
+                        </div>
+                        <div class="col-md-2" style="width: 19%;">
+                            <!-- BEGIN WIDGET THUMB -->
+                            <div class="widget-thumb widget-bg-color-white text-uppercase margin-bottom-20 ">
+                                <h4 class="widget-thumb-heading">TOTAL VOLUME DELIVERED</h4>
+                                <div class="widget-thumb-wrap">
+                                    <i class="widget-thumb-icon bg-red icon-layers"></i>
+                                    <div class="widget-thumb-body">
+
+                                        <span class="widget-thumb-body-stat" data-counter="counterup" data-value="19,682,630">19,682,630</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END WIDGET THUMB -->
+                        </div>
+                        <div class="col-md-2" style="width: 19%;">
+                            <!-- BEGIN WIDGET THUMB -->
+                            <div class="widget-thumb widget-bg-color-white text-uppercase margin-bottom-20 ">
+                                <h4 class="widget-thumb-heading">TOTAL VOLUME REMAINING</h4>
+                                <div class="widget-thumb-wrap">
+                                    <i class="widget-thumb-icon bg-purple icon-screen-desktop"></i>
+                                    <div class="widget-thumb-body">
+
+                                        <span class="widget-thumb-body-stat" data-counter="counterup" data-value="3,517,138">3,517,138</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END WIDGET THUMB -->
+                        </div>
+                        <div class="col-md-2" style="width: 19%;">
+                            <!-- BEGIN WIDGET THUMB -->
+                            <div class="widget-thumb widget-bg-color-white text-uppercase margin-bottom-20 ">
+                                <h4 class="widget-thumb-heading">TOTAL TRUCKS DELIVERED</h4>
+                                <div class="widget-thumb-wrap">
+                                    <i class="widget-thumb-icon bg-blue icon-bar-chart"></i>
+                                    <div class="widget-thumb-body">
+
+                                        <span class="widget-thumb-body-stat" data-counter="counterup" data-value="432">432</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END WIDGET THUMB -->
+                        </div>
+                        <div class="col-md-2" style="width: 19%;">
+                            <!-- BEGIN WIDGET THUMB -->
+                            <div class="widget-thumb widget-bg-color-white text-uppercase margin-bottom-20 ">
+                                <h4 class="widget-thumb-heading">TOTAL TRUCKS REMAINING</h4>
+                                <div class="widget-thumb-wrap">
+                                    <i class="widget-thumb-icon bg-blue icon-bar-chart"></i>
+                                    <div class="widget-thumb-body">
+
+                                        <span class="widget-thumb-body-stat" data-counter="counterup" data-value="55">55</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END WIDGET THUMB -->
+                        </div>
+                        <div class="col-lg-12 col-xs-12 col-sm-12">
+                            <div class="portlet light ">
+                                <div class="widget-gradient" style="background: url(wwwroot/Content/Prefil.PNG)">
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-12 col-xs-12 col-sm-12">
+                            <div class="portlet light portlet-fit bordered">
+
+                                <div class="portlet-body">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <div class="mt-widget-3">
+                                                <div class="mt-head bg-red">
+
+
+
+                                                    <div class="mt-head-button">
+                                                        <div class="mt-head-desc"> LOAD DEMURRAGE </div>
+                                                    </div>
+                                                </div>
+                                                <div class="mt-body-actions-icons">
+                                                    <div class="btn-group btn-group btn-group-justified">
+
+
+                                                        <a href="javascript:;" class="btn ">205.25</a>
+                                                        <a href="javascript:;" class="btn ">0.48</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="mt-widget-3">
+                                                <div class="mt-head bg-green">
+
+
+
+                                                    <div class="mt-head-button">
+                                                        <div class="mt-head-desc"> WELL DEMURRAGE </div>
+                                                    </div>
+                                                </div>
+                                                <div class="mt-body-actions-icons">
+                                                    <div class="btn-group btn-group btn-group-justified">
+
+
+                                                        <a href="javascript:;" class="btn ">1826.50</a>
+                                                        <a href="javascript:;" class="btn ">4.23</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="mt-widget-3">
+                                                <div class="mt-head bg-blue-hoki">
+
+
+
+                                                    <div class="mt-head-button">
+                                                        <div class="mt-head-desc"> TOTAL DEMURRAGE </div>
+                                                    </div>
+                                                </div>
+                                                <div class="mt-body-actions-icons">
+                                                    <div class="btn-group btn-group btn-group-justified">
+
+
+                                                        <a href="javascript:;" class="btn ">2031.75</a>
+                                                        <a href="javascript:;" class="btn ">4.70</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="mt-widget-3">
+                                                <div class="mt-head bg-purple ">
+
+
+
+                                                    <div class="mt-head-button">
+                                                        <div class="mt-head-desc"> BILLABLE DEMURRAGE </div>
+                                                    </div>
+                                                </div>
+                                                <div class="mt-body-actions-icons">
+                                                    <div class="btn-group btn-group btn-group-justified">
+
+
+                                                        <a href="javascript:;" class="btn ">758.50</a>
+                                                        <a href="javascript:;" class="btn ">1.76</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-xs-12 col-sm-12">
+                            <div class="portlet light ">
+                                <div class="portlet-title">
+                                    <div class="caption caption-md">
+                                        <i class="icon-bar-chart font-dark hide"></i>
+                                        <span class="caption-subject font-dark bold uppercase">MOVER LAYOUT FOR SAND BY COMPARTMENT</span>
+
+                                    </div>
+
+                                </div>
+                                <div class="portlet-body">
+
+                                    <div class="table-scrollable table-scrollable-borderless">
+                                        <table class="table table-hover table-light">
+                                            <thead>
+                                                <tr class="uppercase">
+                                                    <th> Mover </th>
+                                                    <th> Comp #1 </th>
+                                                    <th> Comp #2 </th>
+                                                    <th> Comp #3 </th>
+                                                    <th> Comp #4 </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+
+
+                                                    <td> 910 </td>
+                                                    <td> 100 Mesh </td>
+                                                    <td> 100 Mesh </td>
+                                                    <td> 40/70 Mesh </td>
+                                                    <td> 100 Mesh </td>
+
+
+                                                </tr>
+                                                <tr>
+
+                                                    <td> 953 </td>
+                                                    <td> 40/70 Mesh </td>
+                                                    <td> 40/70 Mesh </td>
+                                                    <td> 40/70 Mesh </td>
+                                                    <td> 40/70 Mesh </td>
+
+                                                </tr>
+                                                <tr>
+
+                                                    <td> 872 </td>
+                                                    <td> 100 Mesh </td>
+                                                    <td> 100 Mesh </td>
+                                                    <td> 100 Mesh </td>
+                                                    <td> 100 Mesh </td>
+
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-xs-12 col-sm-12">
+                            <div class="portlet light ">
+                                <div class="portlet-title">
+                                    <div class="caption caption-md">
+                                        <i class="icon-bar-chart font-dark hide"></i>
+                                        <span class="caption-subject font-dark bold uppercase">SAND TOTALS FOR DISTRICT USE</span>
+
+                                    </div>
+
+                                </div>
+                                <div class="portlet-body">
+
+                                    <div class="table-scrollable table-scrollable-borderless">
+                                        <table class="table table-hover table-light">
+                                            <thead>
+                                                <tr class="uppercase">
+                                                    <th>
+                                                        SAND TYPE
+                                                    </th>
+                                                    <th>
+                                                        LOADING FACILITY
+                                                    </th>
+                                                    <th>
+                                                        TOTAL VOLUME
+                                                    </th>
+                                                    <th>
+                                                        LOADS
+                                                    </th>
+
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+
+
+                                                    <td>
+                                                        40/70 WHITE
+                                                    </td>
+                                                    <td>
+                                                        BINGHAMTON
+                                                    </td>
+                                                    <td> 0 </td>
+                                                    <td> 0 </td>
+
+
+
+                                                </tr>
+                                                <tr>
+
+                                                    <td>   40/70 WHITE </td>
+                                                    <td>
+                                                        HORSEHEADS
+                                                    </td>
+                                                    <td>
+                                                        4,240,200
+                                                    </td>
+                                                    <td> 92 </td>
+
+
+                                                </tr>
+                                                <tr>
+
+                                                    <td>
+                                                        100 MESH
+                                                    </td>
+                                                    <td>
+                                                        WILLIAMSPORT
+                                                    </td>
+                                                    <td>
+                                                        6,597,060
+                                                    </td>
+                                                    <td>
+                                                        145
+                                                    </td>
+
+
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+
+
+                <!-- END PAGE LEVEL PLUGINS -->
+                <!-- BEGIN THEME GLOBAL SCRIPTS -->
+                <!-- END THEME LAYOUT SCRIPTS -->
+
+            </div>
+        </div>
+    </div>
+</body>
+    <% include ../../views/templates/footer %>
+    <% include ../../views/templates/includes %>
+
+
+</html>
+
+<script>
+    var chart = AmCharts.makeChart("chartdiv", {
+        "type": "pie",
+        "theme": "light",
+        "text": "Product",
+        "dataProvider": [{
+
+        },
+        {
+            "title": "In-Progress",
+            "value": 3500,
+            "text": "100"
+        },
+        {
+            "title": "Completed",
+            "value": 5000
+        },
+        {
+            "title": "Cancel",
+            "value": 3000
+        }, {
+            "title": "Pending",
+            "value": 500
+        }],
+        "titleField": "title",
+        "valueField": "value",
+        "text": "Product",
+        "labelRadius": 5,
+
+        "radius": "42%",
+        "innerRadius": "60%",
+        "text": "Product",
+        "labelText": "[[title]]",
+        "export": {
+            "enabled": true
+        }
+    });
+
+</script>
+<script type="text/javascript">
+    $('#btnDashboard').click(function () {
+        $('#dashboard').css('display', 'block')
+
+    });
+</script>

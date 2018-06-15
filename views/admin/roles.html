@@ -1,0 +1,100 @@
+<html>
+
+<head>
+    <% include ../../views/templates/head %>
+</head>
+
+<body class="page-header-fixed page-sidebar-closed-hide-logo page-container-bg-solid">
+    <% include ../../views/templates/header %>
+
+        <div class="page-container">
+            <!-- BEGIN SIDEBAR -->
+            <% include ../../views/templates/Menu %>
+                <!-- END SIDEBAR -->
+                <!-- BEGIN CONTENT -->
+                <div class="page-content-wrapper">
+                    <!-- BEGIN CONTENT BODY -->
+                    <div class="page-content">
+                        <!-- BEGIN PAGE HEADER-->
+
+                        <h1 class="page-title"></h1>
+                        <h2>Roles &amp; Permissions</h2>
+                        <div class="page-bar">
+                            <ul class="page-breadcrumb">
+                                <li>
+                                    <i class="icon-home"></i>
+                                    <a href="/home">Dashboard</a>
+                                    <i class="fa fa-angle-right"></i>
+                                </li>
+                                <li>
+                                    <span> Roles &amp; Permissions Listing</span>
+                                </li>
+                            </ul>
+                        </div>
+
+
+                        <div class="portlet">
+                            <div class="portlet light portlet-fit portlet-datatable ">
+
+                                <div class="portlet-body">
+                                    <div class="table-container">
+
+                                        <div class="pagination-panel">
+
+
+                                            <span id="pageLabel"> Page </span>
+                                            <a href="#" class="btn btn-sm default prev" id="aPrev">
+                                                <i class="fa fa-angle-left"></i>
+                                            </a>
+                                            <input type="text" id="iPageNo" class="pagination-panel-input form-control input-sm input-inline input-mini" maxlenght="5"
+                                                value="1" style="text-align:center; margin: 0 5px;">
+                                            <a href="#" class="btn btn-sm default next" id="aNext">
+                                                <i class="fa fa-angle-right"></i>
+                                            </a>   <span id="pagecaption"> of </span>
+                                            <span class="pagination-panel-total" id="spntotalPageNumbers"></span>
+                                            <span id="pageSeparator"> | </span>
+
+                                            View
+                                            <select id="pageSizeData">
+                                                <option value="2" selected="selected">2</option>
+                                                <option value="10">5</option>
+                                                <option value="10">10</option>
+                                                <option value="30">30</option>
+                                                <option value="50">50</option>
+                                                <option value="100">100</option>
+                                            </select> records
+                                            <span id="spnTotalRecords" style="display:none;"></span>
+                                        </div>
+                                        <!-- <br/>
+
+
+                                        <br/> Show page: -->
+                                        <select id="pager" style="display:none;"></select>
+                                        
+                                        <br/>
+                                        <br/>
+                                        <div id="rolesgrid">
+
+                                        </div>
+
+                                        <div id="externalPager" class="external-pager"></div>
+                                        <br/>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <!-- END CONTENT -->
+        </div>
+
+</body>
+
+<% include ../../views/templates/footer %>
+    <% include ../../views/templates/includes %>
+        <script src="js/roles.js"></script>
+
+</html>

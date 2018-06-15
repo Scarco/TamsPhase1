@@ -1,0 +1,70 @@
+<html>
+
+<head>
+    <% include ../../views/templates/head %>
+</head>
+
+<body class="page-header-fixed page-sidebar-closed-hide-logo page-container-bg-solid">
+    <% include ../../views/templates/header %>
+
+        <div class="page-container">
+            <!-- BEGIN SIDEBAR -->
+            <% include ../../views/templates/Menu %>
+                <!-- END SIDEBAR -->
+                <!-- BEGIN CONTENT -->
+                <div class="page-content-wrapper">
+                    <!-- BEGIN CONTENT BODY -->
+                    <div class="page-content">
+                        <!-- BEGIN PAGE HEADER-->
+                        <!-- BEGIN THEME PANEL -->
+                        <!-- END THEME PANEL -->
+                        <h1 class="page-title"></h1>
+                        <h2>Truck Types Listing</h2>
+                        <div class="page-bar">
+                            <ul class="page-breadcrumb">
+                                <li>
+                                    <i class="icon-home"></i>
+                                    <a href="index.html">Dashboard</a>
+                                    <i class="fa fa-angle-right"></i>
+                                </li>
+                                <li>
+                                    <span> Truck Types Listing</span>
+                                </li>
+                            </ul>
+
+                        </div>
+
+                        <div class="portlet">
+                            <div class="portlet light portlet-fit portlet-datatable ">    
+                                </div>                           
+                                <div class="portlet-body">
+                                    <div class="table-container">
+                                            <% include ../../views/templates/pagination %>
+                                           
+                                        <div id="trucktypegrid">
+                                            </div>
+                                            <% include ../../views/templates/paginationfooter %>
+                                        </div>
+                                       
+                                        </div>
+                                </div>
+                            </div>
+
+
+                            <!-- END QUICK SIDEBAR -->
+                        </div>                       
+
+                    </div>
+
+                    <!-- END QUICK SIDEBAR -->
+                </div>
+
+                <!-- END CONTENT -->
+        </div>
+
+</body>
+
+<% include ../../views/templates/footer %>
+    <% include ../../views/templates/includes %>
+    <script src="js/trucktype.js"></script>
+</html>

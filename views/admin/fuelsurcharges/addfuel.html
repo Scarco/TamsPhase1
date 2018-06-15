@@ -1,0 +1,177 @@
+<html>
+<head>
+    <% include ../../../views/templates/head %>
+</head>
+
+<body class="page-header-fixed page-sidebar-closed-hide-logo page-container-bg-solid">
+       <% include ../../../views/templates/header %>
+      
+        <div class="page-container">
+            <!-- BEGIN SIDEBAR -->
+            <% include ../../../views/templates/Menu %>
+                <!-- END SIDEBAR -->
+                <!-- BEGIN CONTENT -->
+                <div class="page-content-wrapper">
+                    <!-- BEGIN CONTENT BODY -->
+                    <div class="page-content">
+                        <!-- BEGIN PAGE HEADER-->
+                        <!-- BEGIN THEME PANEL -->
+                     
+                        <!-- END THEME PANEL -->
+                        <h1 class="page-title"></h1>
+                        <h2>Add Fuel Surcharges </h2>
+                        <div class="page-bar">
+                            <ul class="page-breadcrumb">
+                                <li>
+                                    <i class="icon-home"></i>
+                                    <a href="index.html">Dashboard</a>
+                                    <i class="fa fa-angle-right"></i>
+                                </li>
+                                <li>
+                                    <span>Add Fuel Surcharges </span>
+                                </li>
+                            </ul>
+        
+                        </div>
+        
+        
+                        <div class="portlet box green">
+                            <div class="portlet-title">
+                                  
+                            
+                              
+        
+                            </div>
+                            <div class="portlet-body form">
+                            
+                                  <div class="fileinput fileinput-new" data-provides="fileinput" style="float:right;margin-right:7%;margin-top: 4px;">
+                                        <span class="btn green btn-file">
+                                            <span class="fileinput-new"> Upload CSV </span>
+                                            <span class="fileinput-exists"> Change </span>
+                                            <input type="hidden"><input type="file" name="..."> </span>
+                                        <span class="fileinput-filename"> </span> &nbsp;
+                                        <a href="javascript:;" class="close fileinput-exists" data-dismiss="fileinput"> </a>
+                                  </div>
+                                    
+                                <!-- BEGIN FORM-->
+                                
+                                <form action="#" class="form-horizontal">
+                                    <div class="form-body">
+                                      
+                                      
+                                      <div class="rates_container" style="display:none;">
+                                        <div class="rates_contain">
+                                            <div class="rates">
+                                             <div class="col-md-12">
+                                                <div class="col-md-3">
+                                                    <div class="form-group">
+                                                        <label for="from_price">From Price</label>                            
+                                                        <div class="input-group" style="padding-right: 20px;">
+                                                            <span class="input-group-addon">$</span>
+                                                                <input class="form-control from_price" placeholder="From Price" name="from_price[]" type="text" value="">                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div class="form-group">
+                                                        <label for="to_price">To Price</label>  
+                                                        <div class="input-group" style="padding-right: 20px;">
+                                                            <span class="input-group-addon">$</span>
+                                                            <input class="form-control to_price" placeholder="To Price" name="to_price[]" type="text" value="">                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                <div class="form-group">
+                                            
+                                                <label for="fsc">FSC Per Mile</label>                                    
+                                                <div class="input-group" style="padding-right: 20px;">
+                                                    <span class="input-group-addon">$</span>
+                                                        <input class="form-control" placeholder="FSC Per Mile" name="fsc[]" type="text" value="">                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    
+                                        <div class="form-group col-md-3">
+                                            <div style="width: 10%; float: left; margin: 30px 0px 0px 10px;"><img src="http://www.etrukr.com/webservice/public/images/plus.png" class="add_rates"></div>
+                                            <div style="width: 25%; padding-left:5px; float: left; margin: 30px 0px 0px 10px;"><img src="http://www.etrukr.com/webservice/public/images/cross.png" class="delete_rates"></div> 
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                                      
+                                 <div class="rates_container add_charges_form"> 
+                                        <div class="rates_contain">
+                                       <div class="rates">
+                                       
+                                        <div class="col-md-12">
+                                        <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label for="from_price">From Price<span class="required" aria-required="true"> * </span></label>                                        
+                                            <div class="input-group" style="padding-right: 20px;">
+                                                 <span class="input-group-addon">$</span>
+                                                <input class="form-control from_price" placeholder="From Price" name="from_price[]" type="text" value="">                                        
+                                            </div>
+                                            <span class="help-block"> Provide your  From price. </span>
+                                         </div>
+                                         </div>
+                                         <div class="col-md-3">
+                                         <div class="form-group">
+                                            <label for="from_price">To Price<span class="required" aria-required="true"> * </span></label>                                        
+                                            <div class="input-group" style="padding-right: 20px;">
+                                                 <span class="input-group-addon">$</span>
+                                                <input class="form-control from_price" placeholder="To Price" name="from_price[]" type="text" value="">                                        
+                                            </div>
+                                            <span class="help-block"> Provide your  To Price. </span>
+                                         </div>
+                                         </div>
+                                         <div class="col-md-3">
+                                         <div class="form-group">
+                                             <label for="from_price">FSC Per Mile<span class="required" aria-required="true"> * </span></label>                                        
+                                            <div class="input-group" style="padding-right: 20px;">
+                                                 <span class="input-group-addon">$</span>
+                                                <input class="form-control from_price" placeholder=" FSC Per Mile" name="from_price[]" type="text" value="">                                        
+                                            </div>
+                                            <span class="help-block"> Provide Your  FSC Per Mile. </span>
+                                         </div>
+                                         </div>
+                                         <div class="col-md-3">
+                                            <div class="form-group">
+                                                <div style="width: 10%; float: left; margin: 30px 0px 0px 10px;"><img src="http://www.etrukr.com/webservice/public/images/plus.png" class="add_rates"></div>  
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    <div id="add_before"></div>
+                                    </div>
+                                        <br />
+                                        <div class="form-actions">
+                                            <div class="row">
+                                                <div class="col-md-offset-5 col-md-30">
+                                                    <a button type="submit" class="btn btn-circle green" onclick="Create()">Create</a>
+                                                    <button type="button" class="btn btn-circle grey-salsa btn-outline " data-dismiss="modal" aria-hidden="true">Cancel</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+        
+                                </form>
+                                <!-- END FORM-->
+                            </div>
+                  
+        
+        
+                        <!-- END QUICK SIDEBAR -->
+                    </div>
+                </div>
+                 <!-- END CONTENT -->
+        </div>
+
+</body>
+
+<% include ../../../views/templates/footer %>
+<% include ../../../views/templates/includes %>
+
+</html>

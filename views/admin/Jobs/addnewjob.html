@@ -1,0 +1,1342 @@
+<html>
+<head>
+    <% include ../../../views/templates/head %>
+</head>
+
+<body class="page-header-fixed page-sidebar-closed-hide-logo page-container-bg-solid">
+       <% include ../../../views/templates/header %>
+      
+        <div class="page-container">
+            <!-- BEGIN SIDEBAR -->
+            <% include ../../../views/templates/Menu %>
+                <!-- END SIDEBAR -->
+                <!-- BEGIN CONTENT -->
+                <div class="page-content-wrapper">
+                    <!-- BEGIN CONTENT BODY -->
+                    <div class="page-content">
+                        <!-- BEGIN PAGE HEADER-->
+                        <!-- BEGIN THEME PANEL -->
+                        <!-- END THEME PANEL -->
+                        <h1 class="page-title"></h1>
+                        <h2>Add New Job</h2>
+                        <div class="page-bar">
+                            <ul class="page-breadcrumb">
+                                <li>
+                                    <i class="icon-home"></i>
+                                    <a href="index.html">Dashboard</a>
+                                    <i class="fa fa-angle-right"></i>
+                                </li>
+                                <li>
+                                    <span>Add New Job</span>
+                                </li>
+                            </ul>
+        
+                        </div>
+                        <div class="portlet light " id="form_wizard_1">
+                            <div class="portlet-title">
+                                <div class="caption">
+                                    <i class=" icon-layers font-red"></i>
+                                    <span class="caption-subject font-red bold uppercase">
+                                        New Job -
+                                        <span class="step-title"> Step 1 of 2 </span>
+                                    </span>
+                                </div>
+                                <div class="actions">
+                                    <a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
+                                        <i class="icon-cloud-upload"></i>
+                                    </a>
+                                    <a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
+                                        <i class="icon-wrench"></i>
+                                    </a>
+                                    <a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
+                                        <i class="icon-trash"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="portlet-body form">
+                                <form class="form-horizontal" action="#" id="submit_form" method="POST" novalidate="novalidate">
+                                    <div class="form-wizard">
+                                        <div class="form-body">
+                                            <ul class="nav nav-pills nav-justified steps">
+                                                <li class="active">
+                                                    <a href="#tab1" data-toggle="tab" class="step" aria-expanded="true">
+                                                        <span class="number"> 1 </span>
+                                                        <span class="desc">
+                                                            <i class="fa fa-check"></i> Job Information
+                                                        </span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#tab2" data-toggle="tab" class="step">
+                                                        <span class="number"> 2 </span>
+                                                        <span class="desc">
+                                                            <i class="fa fa-check"></i> Product Information
+                                                        </span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                            <div id="bar" class="progress progress-striped" role="progressbar">
+                                                <div class="progress-bar progress-bar-success" style="width: 25%;"> </div>
+                                            </div>
+                                            <div class="tab-content">
+                                                <div class="alert alert-danger display-none">
+                                                    <button class="close" data-dismiss="alert"></button> You have some form errors. Please check below.
+                                                </div>
+                                                <div class="alert alert-success display-none">
+                                                    <button class="close" data-dismiss="alert"></button> Your form validation is successful!
+                                                </div>
+                                                <div class="tab-pane active" id="tab1">
+                                                    <h3 class="block">Provide Job Details</h3>
+                                                    <div class="form-group">
+                                                        <label class="control-label col-md-2">
+                                                            Well Name
+                                                            <span class="required" aria-required="true"> * </span>
+                                                        </label>
+                                                        <div class="col-md-3">
+                                                            <input type="text" class="form-control" name="Well Name">
+                                                            <span class="help-block"> Provide your Well Name </span>
+                                                        </div>
+                                                        <label class="control-label col-md-2">
+                                                            API
+                                                            <span class="required" aria-required="true"> * </span>
+                                                        </label>
+                                                        <div class="col-md-3">
+                                                            <input type="text" class="form-control" name="api">
+                                                            <span class="help-block"> Provide your API </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="control-label col-md-2">
+                                                            Cost Center
+                                                            <span class="required" aria-required="true"> * </span>
+                                                        </label>
+                                                        <div class="col-md-3">
+                                                            <input type="text" class="form-control" name="Latitude">
+                                                            <span class="help-block"> Provide your   Cost Center </span>
+                                                        </div>
+                                                        <label class="control-label col-md-2">
+                                                            Latitude
+                                                            <span class="required" aria-required="true"> * </span>
+                                                        </label>
+                                                        <div class="col-md-3">
+                                                            <input type="text" class="form-control" name="Latitude">
+                                                            <span class="help-block"> Provide your Latitude </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="control-label col-md-2">
+                                                            Longitude
+        
+                                                        </label>
+                                                        <div class="col-md-3">
+                                                            <input type="text" class="form-control" name="password1" id="submit_form_password1">
+                                                            <span class="help-block"> Provide yourLongitude. </span>
+                                                        </div>
+                                                        <label class="control-label col-md-2">
+                                                            Destination Address
+        
+                                                        </label>
+                                                        <div class="col-md-3">
+                                                            <input type="text" class="form-control" name="City1" id="submit_form_password1">
+                                                            <span class="help-block"> Provide your Destination Address </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="control-label col-md-2">
+                                                            City
+        
+                                                        </label>
+                                                        <div class="col-md-3">
+                                                            <input type="Text" class="form-control" name="State">
+                                                            <span class="help-block"> Provide your City </span>
+                                                        </div>
+                                                        <label class="control-label col-md-2">
+                                                            State
+        
+                                                        </label>
+                                                        <div class="col-md-3">
+                                                            <input type="Text" class="form-control" name="County">
+                                                            <span class="help-block"> Provide your State </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="control-label col-md-2">
+                                                            County
+        
+                                                        </label>
+                                                        <div class="col-md-3">
+                                                            <input type="Text" class="form-control" name="State">
+                                                            <span class="help-block"> Provide your County </span>
+                                                        </div>
+                                                        <label class="control-label col-md-2">Service Company</label>
+                                                        <div class="col-md-3">
+                                                            <select class="form-control" id="Vendor Type" name="Vendor Type">
+                                                                <option> Select </option>
+        
+                                                                <option>Jack</option>
+                                                                <option> John</option>
+                                                                <option> Check</option>
+                                                            </select>
+                                                            <span class="help-block"> Provide your Service Company </span>
+                                                        </div>
+        
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="control-label col-md-2">Service Company Contact Person</label>
+                                                        <div class="col-md-3">
+                                                            <select id="ddlCompany" class="form-control select2-multiple select2-hidden-accessible" placeholder="Select Contact" multiple="" tabindex="-1" aria-hidden="true">
+                                                                <option>Jack</option>
+                                                                <option> John</option>
+                                                                <option> Check</option>
+                                                            </select>
+        
+                                                            <span class="help-block"> Provide your Contact Person </span>
+                                                        
+                                                    </div>
+                                                        <label class="control-label col-md-2">Estimated Start Date</label>
+                                                        <div class="col-md-3">
+                                                            <div class="input-group date date-picker" data-date-format="dd-mm-yyyy">
+                                                                <input type="text" class="form-control" readonly="" name="datepicker">
+                                                                <span class="input-group-btn">
+                                                                    <button class="btn default" type="button">
+                                                                        <i class="fa fa-calendar"></i>
+                                                                    </button>
+                                                                </span>
+                                                            </div>
+                                                            <span class="help-block"> Choose estimated Start Date </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="control-label col-md-2">Estimated End Date</label>
+                                                        <div class="col-md-3">
+                                                            <div class="input-group date date-picker" data-date-format="dd-mm-yyyy">
+                                                                <input type="text" class="form-control" readonly="" name="datepicker">
+                                                                <span class="input-group-btn">
+                                                                    <button class="btn default" type="button">
+                                                                        <i class="fa fa-calendar"></i>
+                                                                    </button>
+                                                                </span>
+                                                            </div>
+                                                            <span class="help-block"> Choose estimated End Date </span>
+                                                        </div>
+                                                        <label class="control-label col-md-2">Storage type</label>
+                                                        <div class="col-md-3">
+        
+                                                            <select class="form-control" id="Vendor Type" name="Vendor Type">
+                                                                <option> Select </option>
+        
+                                                                <option>Storage1</option>
+                                                                <option> Storage2</option>
+                                                                <option> Storage3</option>
+                                                            </select>
+                                                            <span class="help-block"> Provide your Storage type </span>
+                                                        </div>
+                                                       
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="control-label col-md-2">
+                                                            No. of stages
+                                                        </label>
+                                                        <div class="col-md-3">
+                                                            <input type="Text" class="form-control" name="County">
+                                                            <span class="help-block"> Provide your Stages </span>
+                                                        </div>
+                                                        <label class="control-label col-md-2">
+                                                            Total Well Heads assigned
+                                                        </label>
+                                                        <div class="col-md-3">
+                                                            <input type="Text" class="form-control" name="County">
+                                                            <span class="help-block"> Provide Well Heads </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="control-label col-md-2">
+                                                            Comments
+        
+                                                        </label>
+                                                        <div class="col-md-6">
+                                                            <textarea class="form-control" rows="3" style="margin: 0px 34px 0px 0px; width: 135%; height: 112px; resize:none"></textarea>
+                                                            <span class="help-block"> Provide your Comments </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane" id="tab2">
+                                                    <h3 class="block">Provide Order Details</h3>
+                                                    <h4 class="form-section">Product Information</h4>
+                                                    <div class="form-group">
+        
+                                                        <label class="control-label col-md-2">
+                                                            PO Number
+                                                            <span class="required" aria-required="true"> * </span>
+                                                        </label>
+                                                        <div class="col-md-3">
+                                                            <input type="text" class="form-control" name="PO Number" id="PO Number">
+                                                            <span class="help-block"> Provide your product PO Number. </span>
+                                                        </div>
+                                                        <label class="control-label col-md-2">Product</label>
+                                                        <div class="col-md-3">
+                                                            <select class="form-control" id="ddlPdt" name="Product">
+                                                                <option> -Select Product-</option>
+                                                                <option>Oil</option>
+                                                                <option>Sand</option>
+                                                                <option>Chemical</option>
+                                                            </select>
+                                                            <span class="help-block"> Provide your product Name. </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="control-label col-md-2">Product Type</label>
+                                                        <div class="col-md-3">
+                                                            <select class="form-control" id="ddlPdt" name="Product">
+                                                                <option> Select</option>
+                                                                <option>100_Mesh</option>
+                                                                <option>Oil</option>
+                                                                <option>Chemical</option>
+                                                            </select>
+                                                            <span class="help-block"> Provide your product Type. </span>
+                                                        </div>
+                                                        <label class="control-label col-md-2">Vendor Name</label>
+                                                        <div class="col-md-3">
+                                                            <select class="form-control" id="Vendor Name" name="Vendor Name">
+                                                                <option> Select </option>
+                                                                <option>Jack</option>
+                                                                <option> John</option>
+                                                                <option> Check</option>
+                                                            </select>
+                                                            <span class="help-block"> Provide your Vendor Name. </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="control-label col-md-2">
+                                                            Quantity
+                                                            <span class="required" aria-required="true"> * </span>
+                                                        </label>
+                                                        <div class="col-md-3">
+                                                            <input type="text" class="form-control" name="Quantity" id="Quantity">
+                                                            <span class="help-block"> Provide your product Quantity. </span>
+                                                        </div>
+                                                    </div>
+                                                    <h4 class="form-section">Pickup Details</h4>
+        
+                                                    <div class="form-group">
+                                                        <label class="control-label col-md-2">
+                                                            Origin Location
+                                                            <span class="required" aria-required="true"> * </span>
+                                                        </label>
+                                                        <div class="col-md-3">
+                                                            <input type="text" class="form-control" name="password1" id="submit_form_password1">
+                                                            <span class="help-block"> Provide your Origin  Address. </span>
+                                                        </div>
+                                                        <label class="control-label col-md-2">
+                                                            City
+                                                            <span class="required" aria-required="true"> * </span>
+                                                        </label>
+                                                        <div class="col-md-3">
+                                                            <input type="text" class="form-control" name="City1" id="submit_form_password1">
+                                                            <span class="help-block"> Provide your City. </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="control-label col-md-2">
+                                                            State
+                                                            <span class="required" aria-required="true"> * </span>
+                                                        </label>
+                                                        <div class="col-md-3">
+                                                            <input type="Text" class="form-control" name="State">
+                                                            <span class="help-block"> Provide your State </span>
+                                                        </div>
+                                                        <label class="control-label col-md-2">
+                                                            County
+                                                            <span class="required" aria-required="true"> * </span>
+                                                        </label>
+                                                        <div class="col-md-3">
+                                                            <input type="Text" class="form-control" name="County">
+                                                            <span class="help-block"> Provide your County </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="control-label col-md-2">
+                                                            Zipcode
+                                                            <span class="required" aria-required="true"> * </span>
+                                                        </label>
+                                                        <div class="col-md-3">
+                                                            <input type="Text" class="form-control" name="State">
+                                                            <span class="help-block"> Provide your Zipcode </span>
+                                                        </div>
+        
+                                                    </div>
+                                                    <div>
+                                                        <div class="form-actions right">
+                                                            <button type="button" class="btn default">Cancel</button>
+                                                            <button type="submit" class="btn green">Add Purchase Order </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="portlet">
+                                                        <div class="portlet-title">
+                                                            <div class="caption">
+                                                                <i class="fa fa-opencart-o"></i>Purchase Order
+                                                            </div>
+                                                            <div class="tools">
+                                                                <a href="javascript:;" class="collapse" data-original-title="" title=""> </a>
+                                                                <a href="#portlet-config" data-toggle="modal" class="config" data-original-title="" title=""> </a>
+                                                                <a href="javascript:;" class="reload" data-original-title="" title=""> </a>
+                                                                <a href="javascript:;" class="remove" data-original-title="" title=""> </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="portlet-body">
+                                                            <div class="table-scrollable">
+                                                                <table class="table table-striped table-bordered table-advance table-hover">
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th>
+                                                                                <i class="fa fa-briefcase"></i> PO#
+                                                                            </th>
+                                                                            <th class="hidden-xs">
+                                                                                <i class="fa fa-user"></i> Vendor Name
+                                                                            </th>
+                                                                            <th>
+                                                                                <i class="fa fa-shopping-cart"></i> Product
+                                                                            </th>
+                                                                            <th>
+                                                                                <i class="fa fa-shopping-cart"></i> Product Type
+                                                                            </th>
+                                                                            <th>
+                                                                                <i class="fa fa-shopping-cart"></i> Quantity
+                                                                            </th>
+                                                                            <th> Action </th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td class="highlight">
+                                                                                <div class="success"></div>
+                                                                                <a href="javascript:;"> 001 </a>
+                                                                            </td>
+                                                                            <td class="hidden-xs"> Jack </td>
+                                                                            <td class="hidden-xs"> Sand </td>
+                                                                            <td class="hidden-xs"> 1000 Mesh </td>
+                                                                            <td class="hidden-xs"> 1000 (Pound) </td>
+                                                                            <td>
+                                                                                <a class="btn btn-outline btn-circle btn-sm purple dark btn-outline sbold" data-toggle="modal" href="#full">
+                                                                                    <i class="fa fa-edit"></i> Edit
+                                                                                </a>
+                                                                                <a href="#" onclick="Delete()" class="btn btn-outline btn-circle dark btn-sm black">
+                                                                                    <i class="fa fa-trash-o"></i> Delete
+                                                                                </a>
+                                                                                <a class="btn btn-outline btn-circle btn-sm blue" href="Coordinator_List.html">
+                                                                                    <i class="fa fa-edit"></i> Assign Coordinators
+                                                                                </a>
+                                                                                <a class="btn btn-outline btn-circle btn-sm blue" data-toggle="modal" onclick="TruckAssign()">
+                                                                                    <i class="fa fa-edit"></i> Assign Truck
+                                                                                </a>
+        
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="highlight">
+                                                                                <div class="info"> </div>
+                                                                                <a href="javascript:;"> 002 </a>
+                                                                            </td>
+                                                                            <td class="hidden-xs"> Jack </td>
+                                                                            <td class="hidden-xs"> Sand </td>
+                                                                            <td class="hidden-xs"> 1000 Mesh </td>
+                                                                            <td class="hidden-xs"> 1000 (Pound) </td>
+                                                                            <td>
+                                                                                <a class="btn btn-outline btn-circle btn-sm purple dark btn-outline sbold" data-toggle="modal" href="#full">
+                                                                                    <i class="fa fa-edit"></i> Edit
+                                                                                </a>
+                                                                                <a href="#" onclick="Delete()" class="btn btn-outline btn-circle dark btn-sm black">
+                                                                                    <i class="fa fa-trash-o"></i> Delete
+                                                                                </a>
+        
+                                                                                <a class="btn btn-outline btn-circle btn-sm blue" data-toggle="modal" href="#large">
+                                                                                    <i class="fa fa-edit"></i> View Coordinators
+                                                                                </a>
+                                                                                <a class="btn btn-outline btn-circle btn-sm blue" data-toggle="modal" href="#full3">
+                                                                                    <i class="fa fa-edit"></i> View Trucking Companies
+                                                                                </a>
+        
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="highlight">
+                                                                                <div class="success"> </div>
+                                                                                <a href="javascript:;"> 003 </a>
+                                                                            </td>
+                                                                            <td class="hidden-xs"> Jack </td>
+                                                                            <td class="hidden-xs"> Sand </td>
+                                                                            <td class="hidden-xs"> 1000 Mesh </td>
+                                                                            <td class="hidden-xs"> 1000 (Pound) </td>
+                                                                            <td>
+                                                                                <a class="btn btn-outline btn-circle btn-sm purple dark btn-outline sbold" data-toggle="modal" href="#full">
+                                                                                    <i class="fa fa-edit"></i> Edit
+                                                                                </a>
+                                                                                <a href="#" onclick="Delete()" class="btn btn-outline btn-circle dark btn-sm black">
+                                                                                    <i class="fa fa-trash-o"></i> Delete
+                                                                                </a>
+        
+                                                                                <a class="btn btn-outline btn-circle btn-sm blue" href="Coordinator_List.html">
+                                                                                    <i class="fa fa-edit"></i> Assign Coordinators
+                                                                                </a>
+                                                                                <a class="btn btn-outline btn-circle btn-sm blue" data-toggle="modal" onclick="TruckAssign()">
+                                                                                    <i class="fa fa-edit"></i> Assign Truck
+                                                                                </a>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="highlight">
+                                                                                <div class="warning"> </div>
+                                                                                <a href="javascript:;"> 004 </a>
+                                                                            </td>
+                                                                            <td class="hidden-xs"> Jack </td>
+                                                                            <td class="hidden-xs"> Sand </td>
+                                                                            <td class="hidden-xs"> 1000 Mesh </td>
+                                                                            <td class="hidden-xs"> 1000 (Pound) </td>
+                                                                            <td>
+                                                                                <a class="btn btn-outline btn-circle btn-sm purple dark btn-outline sbold" data-toggle="modal" href="#full">
+                                                                                    <i class="fa fa-edit"></i> Edit
+                                                                                </a>
+                                                                                <a href="#" onclick="Delete()" class="btn btn-outline btn-circle dark btn-sm black">
+                                                                                    <i class="fa fa-trash-o"></i> Delete
+                                                                                </a>
+        
+                                                                                <a class="btn btn-outline btn-circle btn-sm blue" data-toggle="modal" href="#large">
+                                                                                    <i class="fa fa-edit"></i> View Coordinators
+                                                                                </a>
+                                                                                <a class="btn btn-outline btn-circle btn-sm blue" data-toggle="modal" href="#full3">
+                                                                                    <i class="fa fa-edit"></i> View Trucking Companies
+                                                                                </a>
+        
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+        
+                                                </div>
+        
+                                            </div>
+                                        </div>
+                                        <div class="form-actions">
+                                            <div class="row">
+                                                <div class="col-md-offset-3 col-md-9">
+                                                    <a href="javascript:;" class="btn default button-previous disabled" style="display: none;">
+                                                        <i class="fa fa-angle-left"></i> Back
+                                                    </a>
+                                                    <a href="javascript:;" class="btn btn-outline green button-next">
+                                                        Continue
+                                                        <i class="fa fa-angle-right"></i>
+                                                    </a>
+                                                    <a href="javascript:;" class="btn green button-submit" style="display: none;">
+                                                        Submit
+                                                        <i class="fa fa-check"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+        
+                        <div class="modal fade" id="full" tabindex="-1" role="dialog" aria-hidden="true">
+                            <div class="modal-dialog modal-full">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                                        <h4 class="modal-title">Purchace Order Detail</h4>
+                                    </div>
+        
+        
+                                    <div class="portlet-body form">
+                                        <!-- BEGIN FORM-->
+                                        <form action="#" class="form-horizontal">
+                                            <div class="form-body">
+        
+                                                <div class="tab-pane active" id="tab2">
+                                                    <h4 class="form-section">Product Information</h4>
+                                                    <div class="form-group">
+        
+                                                        <label class="control-label col-md-2">
+                                                            PO Number
+                                                            <span class="required" aria-required="true"> * </span>
+                                                        </label>
+                                                        <div class="col-md-3">
+                                                            <input type="text" class="form-control" name="PO Number" id="PO Number">
+                                                            <span class="help-block"> Provide your product PO Number. </span>
+                                                        </div>
+                                                        <label class="control-label col-md-2">Product</label>
+                                                        <div class="col-md-3">
+                                                            <select class="form-control" id="Vendor Name" name="Product">
+                                                                <option> Select </option>
+        
+                                                                <option>Sand</option>
+                                                                <option>Oil</option>
+                                                                <option>Chemical</option>
+                                                            </select>
+                                                            <span class="help-block"> Provide your product Name. </span>
+                                                        </div>
+        
+        
+        
+        
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="control-label col-md-2">Product Type</label>
+                                                        <div class="col-md-3">
+                                                            <select class="form-control" id="Vendor Name" name="Vendor Name">
+                                                                <option> Select </option>
+        
+                                                                <option>sand-100 Mesh</option>
+                                                                <option> White Petrol</option>
+                                                                <option> Chemical</option>
+                                                            </select>
+                                                            <span class="help-block"> Provide your product Type. </span>
+                                                        </div>
+                                                        <label class="control-label col-md-2">Vendor Name</label>
+                                                        <div class="col-md-3">
+                                                            <select class="form-control" id="Vendor Name" name="Vendor Name">
+                                                                <option> Select </option>
+        
+                                                                <option>Jack</option>
+                                                                <option> John</option>
+                                                                <option> Check</option>
+                                                            </select>
+                                                            <span class="help-block"> Provide your Vendor Name. </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="control-label col-md-2">
+                                                            Quantity
+                                                            <span class="required" aria-required="true"> * </span>
+                                                        </label>
+                                                        <div class="col-md-3">
+                                                            <input type="text" class="form-control" name="Quantity" id="Quantity">
+                                                            <span class="help-block"> Provide your product Quantity. </span>
+                                                        </div>
+                                                    </div>
+        
+                                                    <h4 class="form-section">Pickup Details</h4>
+        
+                                                    <div class="form-group">
+                                                        <label class="control-label col-md-2">
+                                                            Origin Location
+                                                            <span class="required" aria-required="true"> * </span>
+                                                        </label>
+                                                        <div class="col-md-3">
+                                                            <input type="text" class="form-control" name="password" id="submit_form_password">
+                                                            <span class="help-block"> Provide your Origin  Address. </span>
+                                                        </div>
+                                                        <label class="control-label col-md-2">
+                                                            City
+                                                            <span class="required" aria-required="true"> * </span>
+                                                        </label>
+                                                        <div class="col-md-3">
+                                                            <input type="text" class="form-control" name="City" id="submit_form_password">
+                                                            <span class="help-block"> Provide your City. </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="control-label col-md-2">
+                                                            State
+                                                            <span class="required" aria-required="true"> * </span>
+                                                        </label>
+                                                        <div class="col-md-3">
+                                                            <input type="Text" class="form-control" name="State">
+                                                            <span class="help-block"> Provide your State </span>
+                                                        </div>
+                                                        <label class="control-label col-md-2">
+                                                            County
+                                                            <span class="required" aria-required="true"> * </span>
+                                                        </label>
+                                                        <div class="col-md-3">
+                                                            <input type="Text" class="form-control" name="County">
+                                                            <span class="help-block"> Provide your County </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="control-label col-md-2">
+                                                            Zipcode
+                                                            <span class="required" aria-required="true"> * </span>
+                                                        </label>
+                                                        <div class="col-md-3">
+                                                            <input type="Text" class="form-control" name="State">
+                                                            <span class="help-block"> Provide your Zipcode </span>
+                                                        </div>
+        
+                                                    </div>
+                                                </div>
+                                                <br />
+                                                <br />
+        
+                                                <div class="form-actions">
+                                                    <div class="row">
+                                                        <div class="col-md-offset-5 col-md-30">
+                                                            <a href="#" onclick="Update()" class="btn btn-circle green"> Update</a>
+                                                            <button type="button" class="btn btn-circle grey-salsa btn-outline " data-dismiss="modal" aria-hidden="true">Cancel</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                        <!-- END FORM-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="modal fade" id="large1" tabindex="-1" role="dialog" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                                        <h4 class="modal-title">Trucking Detail</h4>
+                                    </div>
+        
+        
+                                    <div class="portlet-body form">
+                                        <!-- BEGIN FORM-->
+                                        <form action="#" class="form-horizontal">
+                                            <div class="form-body">
+        
+                                                <div class="tab-pane active" id="tab3">
+                                                    <h4 class="form-section">Trucking Company Information</h4>
+                                                    <div class="form-group">
+                                                        <label class="control-label col-md-2">Trucking Company</label>
+                                                        <div class="col-md-3">
+                                                            <select id="multiple" class="form-control select2-multiple select2-hidden-accessible" multiple="" tabindex="-1" aria-hidden="true">
+                                                                <option>Jack</option>
+                                                                <option> John</option>
+                                                                <option> Check</option>
+                                                            </select>
+                                                        </div>
+                                                        <label class="control-label col-md-2">
+                                                            Cost
+                                                            <span class="required" aria-required="true"> * </span>
+                                                        </label>
+                                                        <div class="col-md-3">
+                                                            <input type="Text" class="form-control" name="State">
+                                                            <span class="help-block">  Cost  </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="control-label col-md-2">
+                                                            Phone No
+                                                            <span class="required" aria-required="true"> * </span>
+                                                        </label>
+                                                        <div class="col-md-3">
+                                                            <input type="Text" class="form-control" name="State">
+                                                            <span class="help-block">  Phone No  </span>
+                                                        </div>
+                                                        <label class="control-label col-md-2">Contact Person</label>
+                                                        <div class="col-md-3">
+                                                            <select id="multiple" class="form-control select2-multiple select2-hidden-accessible" multiple="" tabindex="-1" aria-hidden="true">
+                                                                <option>Jack</option>
+                                                                <option> John</option>
+                                                                <option> Check</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+        
+        
+        
+        
+        
+        
+                                                <h4 class="form-section">Job Coordinators</h4>
+                                               
+                                            
+                                            <form action="#" class="form-horizontal">
+                                    <div class="form-body">
+                                <div class="rates_container" style="display:none;">
+                                        <div class="rates_contain">
+                                            <div class="rates">
+                                             <div class="col-md-12">
+                                                <div class="col-md-3">
+                                                    <div class="form-group">
+                                                        <label for="from_price">Contact Person</label>                            
+                                                        <div class="input-group" style="padding-right: 20px;">
+                                                                <input class="form-control from_price" placeholder="Contact person" name="from_price[]" type="text" value="">                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div class="form-group">
+                                                        <label for="to_price">Cost</label>  
+                                                        <div class="input-group" style="padding-right: 20px;">
+                                                            <input class="form-control to_price" placeholder="Cost" name="to_price[]" type="text" value="">                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                                            
+                                        <div class="form-group col-md-3">
+                                            <div style="width: 10%; float: left; margin: 30px 0px 0px 10px;"><img src="http://www.etrukr.com/webservice/public/images/plus.png" class="add_rates"></div>
+                                            <div style="width: 25%; padding-left:5px; float: left; margin: 30px 0px 0px 10px;"><img src="http://www.etrukr.com/webservice/public/images/cross.png" class="delete_rates"></div> 
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                                      
+                                 <div class="rates_container add_charges_form"> 
+                                        <div class="rates_contain">
+                                       <div class="rates">
+                                       
+                                        <div class="col-md-12">
+                                        <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label for="from_price">Contact Person<span class="required" aria-required="true"> * </span></label>                                        
+                                            <div class="input-group" style="padding-right: 20px;">
+                                                <input class="form-control from_price" placeholder="Contact Person" name="from_price[]" type="text" value="">                                        
+                                            </div>
+                                         </div>
+                                         </div>
+                                         <div class="col-md-3">
+                                         <div class="form-group">
+                                            <label for="from_price">Cost<span class="required" aria-required="true"> * </span></label>                                        
+                                            <div class="input-group" style="padding-right: 20px;">
+                                                <input class="form-control from_price" placeholder="Cost" name="from_price[]" type="text" value="">                                        
+                                            </div>
+                                         </div>
+                                         </div>
+                                         <div class="col-md-3">
+                                            <div class="form-group">
+                                                <div style="width: 10%; float: left; margin: 30px 0px 0px 10px;"><img src="http://www.etrukr.com/webservice/public/images/plus.png" class="add_rates"></div>  
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    <div id="add_before"></div>
+                                    </div>
+                                    </div>
+        
+                                </form>
+        
+        
+                                            </div>
+        
+        
+                                            <br />
+                                            <br />
+                                            <div class="form-actions">
+                                                <div class="row">
+                                                    <div class="col-md-offset-5 col-md-30">
+                                                        <a href="#" onclick="Assign()" class="btn btn-circle green"> Assign</a>
+                                                        <button type="button" class="btn btn-circle grey-salsa btn-outline " data-dismiss="modal" aria-hidden="true">Cancel</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    </div>
+        
+                                    <!-- END FORM-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="full2" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog modal-full">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                                    <h4 class="modal-title">Trucking Request Details</h4>
+                                </div>
+        
+        
+                                <div class="portlet-body form">
+                                    <!-- BEGIN FORM-->
+                                    <div class="portlet light ">
+                                        <div class="portlet-title tabbable-line">
+                                            <div class="caption">
+                                                <i class=" icon-social-twitter font-dark hide"></i>
+                                                <span class="caption-subject font-dark bold uppercase">Truck Companys</span>
+                                            </div>
+        
+                                        </div>
+                                        <div class="portlet-body">
+                                            <div class="tab-content">
+        
+                                                <!-- BEGIN: Actions -->
+                                                <div class="mt-actions">
+                                                    <div class="mt-action">
+                                                        <div class="mt-action-img">
+                                                            <img src="wwwroot/Content/Metronics/assets/pages/media/users/avatar10.jpg">
+                                                        </div>
+                                                        <div class="mt-action-body">
+                                                            <div class="mt-action-row">
+                                                                <div class="mt-action-info ">
+                                                                    <div class="mt-action-icon ">
+                                                                        <i class="icon-magnet"></i>
+                                                                    </div>
+                                                                    <div class="mt-action-details ">
+                                                                        <span class="mt-action-author">Safe Land Transport</span>
+                                                                        <p class="mt-action-desc">1280 Massachusetts Avenue,Cambridge,MA,02138</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="mt-action-datetime ">
+                                                                    <span class="mt-action-date">3 jun</span>
+                                                                    <span class="mt-action-dot bg-green"></span>
+                                                                    <span class="mt=action-time">9:30-13:00</span>
+                                                                </div>
+                                                                <div class="mt-action-buttons ">
+                                                                    <span class="label label-sm label-warning"> Pending </span>
+        
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mt-action">
+                                                        <div class="mt-action-img">
+                                                            <img src="wwwroot/Content/Metronics/assets/pages/media/users/avatar3.jpg">
+                                                        </div>
+                                                        <div class="mt-action-body">
+                                                            <div class="mt-action-row">
+                                                                <div class="mt-action-info ">
+                                                                    <div class="mt-action-icon ">
+                                                                        <i class=" icon-bubbles"></i>
+                                                                    </div>
+                                                                    <div class="mt-action-details ">
+                                                                        <span class="mt-action-author">Safe Land Transport</span>
+                                                                        <p class="mt-action-desc">1280 Massachusetts Avenue,Cambridge,MA,02138</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="mt-action-datetime ">
+                                                                    <span class="mt-action-date">3 jun</span>
+                                                                    <span class="mt-action-dot bg-red"></span>
+                                                                    <span class="mt=action-time">9:30-13:00</span>
+                                                                </div>
+                                                                <div class="mt-action-buttons ">
+                                                                    <span class="label label-sm label-warning"> Pending </span>
+        
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mt-action">
+                                                        <div class="mt-action-img">
+                                                            <img src="wwwroot/Content/Metronics/assets/pages/media/users/avatar2.jpg">
+                                                        </div>
+                                                        <div class="mt-action-body">
+                                                            <div class="mt-action-row">
+                                                                <div class="mt-action-info ">
+                                                                    <div class="mt-action-icon ">
+                                                                        <i class="icon-call-in"></i>
+                                                                    </div>
+                                                                    <div class="mt-action-details ">
+                                                                        <span class="mt-action-author">Safe Land Transport</span>
+                                                                        <p class="mt-action-desc">1280 Massachusetts Avenue,Cambridge,MA,02138</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="mt-action-datetime ">
+                                                                    <span class="mt-action-date">3 jun</span>
+                                                                    <span class="mt-action-dot bg-green"></span>
+                                                                    <span class="mt=action-time">9:30-13:00</span>
+                                                                </div>
+                                                                <div class="mt-action-buttons ">
+                                                                    <span class="label label-sm label-warning"> Pending </span>
+        
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mt-action">
+                                                        <div class="mt-action-img">
+                                                            <img src="wwwroot/Content/Metronics/assets/pages/media/users/avatar7.jpg">
+                                                        </div>
+                                                        <div class="mt-action-body">
+                                                            <div class="mt-action-row">
+                                                                <div class="mt-action-info ">
+                                                                    <div class="mt-action-icon ">
+                                                                        <i class=" icon-bell"></i>
+                                                                    </div>
+                                                                    <div class="mt-action-details ">
+                                                                        <span class="mt-action-author">Safe Land Transport</span>
+                                                                        <p class="mt-action-desc">1280 Massachusetts Avenue,Cambridge,MA,02138</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="mt-action-datetime ">
+                                                                    <span class="mt-action-date">3 jun</span>
+                                                                    <span class="mt-action-dot bg-red"></span>
+                                                                    <span class="mt=action-time">9:30-13:00</span>
+                                                                </div>
+                                                                <div class="mt-action-buttons ">
+                                                                    <span class="label label-sm label-warning"> Pending </span>
+        
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mt-action">
+                                                        <div class="mt-action-img">
+                                                            <img src="wwwroot/Content/Metronics/assets/pages/media/users/avatar8.jpg">
+                                                        </div>
+                                                        <div class="mt-action-body">
+                                                            <div class="mt-action-row">
+                                                                <div class="mt-action-info ">
+                                                                    <div class="mt-action-icon ">
+                                                                        <i class="icon-magnet"></i>
+                                                                    </div>
+                                                                    <div class="mt-action-details ">
+                                                                        <span class="mt-action-author">Safe Land Transport </span>
+                                                                        <p class="mt-action-desc">1280 Massachusetts Avenue,Cambridge,MA,02138</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="mt-action-datetime ">
+                                                                    <span class="mt-action-date">3 jun</span>
+                                                                    <span class="mt-action-dot bg-green"></span>
+                                                                    <span class="mt=action-time">9:30-13:00</span>
+                                                                </div>
+                                                                <div class="mt-action-buttons ">
+                                                                    <span class="label label-sm label-warning"> Pending </span>
+        
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mt-action">
+                                                        <div class="mt-action-img">
+                                                            <img src="wwwroot/Content/Metronics/assets/pages/media/users/avatar9.jpg">
+                                                        </div>
+                                                        <div class="mt-action-body">
+                                                            <div class="mt-action-row">
+                                                                <div class="mt-action-info ">
+                                                                    <div class="mt-action-icon ">
+                                                                        <i class="icon-magnet"></i>
+                                                                    </div>
+                                                                    <div class="mt-action-details ">
+                                                                        <span class="mt-action-author">Safe Land Transport</span>
+                                                                        <p class="mt-action-desc">1280 Massachusetts Avenue,Cambridge,MA,02138</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="mt-action-datetime ">
+                                                                    <span class="mt-action-date">3 jun</span>
+                                                                    <span class="mt-action-dot bg-green"></span>
+                                                                    <span class="mt=action-time">9:30-13:00</span>
+                                                                </div>
+                                                                <div class="mt-action-buttons ">
+                                                                    <span class="label label-sm label-warning"> Pending </span>
+        
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- END: Actions -->
+        
+        
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- END FORM-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="modal fade" id="full3" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog modal-full">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                                    <h4 class="modal-title">Trucking Request Details</h4>
+                                </div>
+        
+        
+                                <div class="portlet-body form">
+                                    <!-- BEGIN FORM-->
+                                    <div class="portlet light ">
+                                        <div class="portlet-title tabbable-line">
+                                            <div class="caption">
+                                                <i class=" icon-social-twitter font-dark hide"></i>
+                                                <span class="caption-subject font-dark bold uppercase">Truck Companys</span>
+                                            </div>
+        
+                                        </div>
+                                        <div class="portlet-body">
+                                            <div class="tab-content">
+        
+                                                <!-- BEGIN: Actions -->
+                                                <div class="mt-actions">
+                                                    <div class="mt-action">
+                                                        <div class="mt-action-img">
+                                                            <img src="wwwroot/Content/Metronics/assets/pages/media/users/avatar10.jpg">
+                                                        </div>
+                                                        <div class="mt-action-body">
+                                                            <div class="mt-action-row">
+                                                                <div class="mt-action-info ">
+                                                                    <div class="mt-action-icon ">
+                                                                        <i class="icon-magnet"></i>
+                                                                    </div>
+                                                                    <div class="mt-action-details ">
+                                                                        <span class="mt-action-author">Safe Land Transport</span>
+                                                                        <p class="mt-action-desc">1280 Massachusetts Avenue,Cambridge,MA,02138</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="mt-action-datetime ">
+                                                                    <span class="mt-action-date">3 jun</span>
+                                                                    <span class="mt-action-dot bg-green"></span>
+                                                                    <span class="mt=action-time">9:30-13:00</span>
+                                                                </div>
+                                                                <div class="mt-action-buttons ">
+                                                                    <span class="label label-sm label-warning"> Pending </span>
+        
+                                                                </div>
+                                                                <div class="mt-action-buttons ">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mt-action">
+                                                            <div class="mt-action-img">
+                                                                <img src="wwwroot/Content/Metronics/assets/pages/media/users/avatar3.jpg">
+                                                            </div>
+                                                            <div class="mt-action-body">
+                                                                <div class="mt-action-row">
+                                                                    <div class="mt-action-info ">
+                                                                        <div class="mt-action-icon ">
+                                                                            <i class=" icon-bubbles"></i>
+                                                                        </div>
+                                                                        <div class="mt-action-details ">
+                                                                            <span class="mt-action-author">Safe Land Transport</span>
+                                                                            <p class="mt-action-desc">1280 Massachusetts Avenue,Cambridge,MA,02138</p>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="mt-action-datetime ">
+                                                                        <span class="mt-action-date">3 jun</span>
+                                                                        <span class="mt-action-dot bg-red"></span>
+                                                                        <span class="mt=action-time">9:30-13:00</span>
+                                                                    </div>
+                                                                    <div class="mt-action-buttons ">
+                                                                        <span class="label label-sm label-success"> Confirm </span>
+                                                                        <div>
+        
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="mt-action-buttons ">
+                                                                        <button type="button" class="btn btn-info mt-ladda-btn ladda-button btn-circle" data-style="zoom-in">
+                                                                            <span class="ladda-label">Accept</span>
+                                                                            <span class="ladda-spinner"></span>
+                                                                        </button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mt-action">
+                                                            <div class="mt-action-img">
+                                                                <img src="wwwroot/Content/Metronics/assets/pages/media/users/avatar2.jpg">
+                                                            </div>
+                                                            <div class="mt-action-body">
+                                                                <div class="mt-action-row">
+                                                                    <div class="mt-action-info ">
+                                                                        <div class="mt-action-icon ">
+                                                                            <i class="icon-call-in"></i>
+                                                                        </div>
+                                                                        <div class="mt-action-details ">
+                                                                            <span class="mt-action-author">Safe Land Transport</span>
+                                                                            <p class="mt-action-desc">1280 Massachusetts Avenue,Cambridge,MA,02138</p>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="mt-action-datetime ">
+                                                                        <span class="mt-action-date">3 jun</span>
+                                                                        <span class="mt-action-dot bg-green"></span>
+                                                                        <span class="mt=action-time">9:30-13:00</span>
+                                                                    </div>
+                                                                    <div class="mt-action-buttons ">
+                                                                        <span class="label label-sm label-danger"> Decline </span>
+        
+        
+                                                                    </div>
+                                                                    <div class="mt-action-buttons ">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mt-action">
+                                                            <div class="mt-action-img">
+                                                                <img src="wwwroot/Content/Metronics/assets/pages/media/users/avatar7.jpg">
+                                                            </div>
+                                                            <div class="mt-action-body">
+                                                                <div class="mt-action-row">
+                                                                    <div class="mt-action-info ">
+                                                                        <div class="mt-action-icon ">
+                                                                            <i class=" icon-bell"></i>
+                                                                        </div>
+                                                                        <div class="mt-action-details ">
+                                                                            <span class="mt-action-author">Safe Land Transport</span>
+                                                                            <p class="mt-action-desc">1280 Massachusetts Avenue,Cambridge,MA,02138</p>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="mt-action-datetime ">
+                                                                        <span class="mt-action-date">3 jun</span>
+                                                                        <span class="mt-action-dot bg-red"></span>
+                                                                        <span class="mt=action-time">9:30-13:00</span>
+                                                                    </div>
+                                                                    <div class="mt-action-buttons ">
+                                                                        <span class="label label-sm label-danger"> Decline </span>
+        
+                                                                    </div>
+                                                                    <div class="mt-action-buttons ">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mt-action">
+                                                            <div class="mt-action-img">
+                                                                <img src="wwwroot/Content/Metronics/assets/pages/media/users/avatar8.jpg">
+                                                            </div>
+                                                            <div class="mt-action-body">
+                                                                <div class="mt-action-row">
+                                                                    <div class="mt-action-info ">
+                                                                        <div class="mt-action-icon ">
+                                                                            <i class="icon-magnet"></i>
+                                                                        </div>
+                                                                        <div class="mt-action-details ">
+                                                                            <span class="mt-action-author">Safe Land Transport </span>
+                                                                            <p class="mt-action-desc">1280 Massachusetts Avenue,Cambridge,MA,02138</p>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="mt-action-datetime ">
+                                                                        <span class="mt-action-date">3 jun</span>
+                                                                        <span class="mt-action-dot bg-green"></span>
+                                                                        <span class="mt=action-time">9:30-13:00</span>
+                                                                    </div>
+                                                                    <div class="mt-action-buttons ">
+                                                                        <span class="label label-sm label-danger"> Decline </span>
+        
+                                                                    </div>
+                                                                    <div class="mt-action-buttons ">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mt-action">
+                                                            <div class="mt-action-img">
+                                                                <img src="wwwroot/Content/Metronics/assets/pages/media/users/avatar9.jpg">
+                                                            </div>
+                                                            <div class="mt-action-body">
+                                                                <div class="mt-action-row">
+                                                                    <div class="mt-action-info ">
+                                                                        <div class="mt-action-icon ">
+                                                                            <i class="icon-magnet"></i>
+                                                                        </div>
+                                                                        <div class="mt-action-details ">
+                                                                            <span class="mt-action-author">Safe Land Transport</span>
+                                                                            <p class="mt-action-desc">1280 Massachusetts Avenue,Cambridge,MA,02138</p>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="mt-action-datetime ">
+                                                                        <span class="mt-action-date">3 jun</span>
+                                                                        <span class="mt-action-dot bg-green"></span>
+                                                                        <span class="mt=action-time">9:30-13:00</span>
+                                                                    </div>
+                                                                    <div class="mt-action-buttons ">
+                                                                        <span class="label label-sm label-warning"> Pending </span>
+        
+                                                                    </div>
+                                                                    <div class="mt-action-buttons ">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- END: Actions -->
+        
+        
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- END FORM-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.modal-dialog -->
+                        <!-- END QUICK SIDEBAR -->
+                    </div>
+                    <div class="modal fade bs-modal-lg" id="large" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                                    <h4 class="modal-title">Assigned Coordinators</h4>
+                                </div>
+                                <div class="portlet box green">
+                                    <div class="portlet-title">
+                                        <div class="caption">
+        
+                                        </div>
+        
+                                    </div>
+                                    <div class="portlet-body">
+                                        <div class="table-scrollable">
+                                            <table class="table table-striped table-hover">
+                                                <thead>
+                                                    <tr>
+        
+                                                        <th> Name </th>
+                                                        <th> Email </th>
+                                                        <th> Phone </th>
+                                                        <th> Street </th>
+                                                        <th> City </th>
+                                                        <th> State </th>
+                                                        <th> County </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>jack</td>
+                                                        <td>jack@gmail.com</td>
+                                                        <td>9751266816</td>
+                                                        <td> 300 New York 300</td>
+                                                        <td>NEW WINDSOR</td>
+                                                        <td>NY</td>
+                                                        <td>ORANGE</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>jack</td>
+                                                        <td>jack@gmail.com</td>
+                                                        <td>9751266816</td>
+                                                        <td> 300 New York 300</td>
+                                                        <td>NEW WINDSOR</td>
+                                                        <td>NY</td>
+                                                        <td>ORANGE</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>jack</td>
+                                                        <td>jack@gmail.com</td>
+                                                        <td>9751266816</td>
+                                                        <td> 300 New York 300</td>
+                                                        <td>NEW WINDSOR</td>
+                                                        <td>NY</td>
+                                                        <td>ORANGE</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>jack</td>
+                                                        <td>jack@gmail.com</td>
+                                                        <td>9751266816</td>
+                                                        <td> 300 New York 300</td>
+                                                        <td>NEW WINDSOR</td>
+                                                        <td>NY</td>
+                                                        <td>ORANGE</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                </div>
+                 <!-- END CONTENT -->
+        </div>
+
+</body>
+
+<% include ../../../views/templates/footer %>
+<% include ../../../views/templates/includes %>
+
+</html>

@@ -1,0 +1,257 @@
+<html>
+    
+ <div class="page-sidebar-wrapper">
+            <!-- END SIDEBAR -->
+            <!-- DOC: Set data-auto-scroll="false" to disable the sidebar from auto scrolling/focusing -->
+            <!-- DOC: Change data-auto-speed="200" to adjust the sub menu slide up/down speed -->
+            <div class="page-sidebar navbar-collapse collapse">
+                <!-- BEGIN SIDEBAR MENU -->
+                <!-- DOC: Apply "page-sidebar-menu-light" class right after "page-sidebar-menu" to enable light sidebar menu style(without borders) -->
+                <!-- DOC: Apply "page-sidebar-menu-hover-submenu" class right after "page-sidebar-menu" to enable hoverable(hover vs accordion) sub menu mode -->
+                <!-- DOC: Apply "page-sidebar-menu-closed" class right after "page-sidebar-menu" to collapse("page-sidebar-closed" class must be applied to the body element) the sidebar sub menu mode -->
+                <!-- DOC: Set data-auto-scroll="false" to disable the sidebar from auto scrolling/focusing -->
+                <!-- DOC: Set data-keep-expand="true" to keep the submenues expanded -->
+                <!-- DOC: Set data-auto-speed="200" to adjust the sub menu slide up/down speed -->
+                <ul class="page-sidebar-menu  page-header-fixed page-sidebar-menu-hover-submenu " data-keep-expanded="false" data-auto-scroll="true" data-slide-speed="200">
+                        <li class="nav-item" id="liUser">
+                                <a href="/home" class="nav-link nav-toggle">
+                                    <i class="icon-home"></i>
+                                    <span class="title">Dashboard</span>
+                                    <span class="arrow"></span>
+                                </a>
+                        </li>
+                    <li class="nav-item" id="liUser">
+                        <a href="/adduser" class="nav-link nav-toggle">
+                            <i class="icon-user"></i>
+                            <span class="title">User</span>
+                            <span class="arrow"></span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li class="nav-item  ">
+                                <a href="/adduser" class="nav-link ">
+                                    <span class="title">
+                                        Add New User
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="nav-item  ">
+                                <a href="/listuser" class="nav-link ">
+                                    <span class="title">
+                                        Users Listing
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item" id="liRolesPermission">
+                        <a href="/roles" class="nav-link nav-toggle">
+                            <i class="icon-lock"></i>
+                            <span class="title">Roles &amp; Permissions</span>
+                            <span class="arrow"></span>
+                        </a>
+
+                    </li>
+
+                    <li class="nav-item" id="liProduct">
+                        <a href="/Products/product" class="nav-link nav-toggle">
+                            <i class="icon-basket"></i>
+                            <span class="title">Products</span>
+                            <span class="arrow"></span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li class="nav-item  ">
+                                <a href="/Products/product" class="nav-link ">
+                                    <span class="title">
+                                        Add New Product
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="nav-item  ">
+                                <a href="/Products/product" class="nav-link ">
+                                    <span class="title">
+                                        Products Listing
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item" id="liJob">
+                        <a href="/Jobs/Index" class="nav-link nav-toggle">
+                            <i class="icon-puzzle"></i>
+                            <span class="title">Jobs</span>
+                            <span class="arrow"></span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li class="nav-item  ">
+                                <a href="/Jobs/Index" class="nav-link ">
+                                    <span class="title">Add New Job</span>
+                                </a>
+                            </li>
+                            <li class="nav-item  ">
+                                <a href="/Jobs/List" class="nav-link ">
+                                    <span class="title">Jobs Listing</span>
+                                </a>
+                            </li>
+
+
+                        </ul>
+                    </li>
+                    <li class="nav-item" id="liTransport">
+                        <a href="/TruckTypes/Index" class="nav-link nav-toggle">
+                            <i class="fa fa-truck"></i>
+                            <span class="title">Truck Types</span>
+                            <span class="arrow"></span>
+                        </a>
+
+                    </li>
+                    <li class="nav-item" id="liVendor">
+                        <a href="/Vendors/Index" class="nav-link nav-toggle">
+                            <i class="icon-globe"></i>
+                            <span class="title">Vendors</span>
+                            <span class="arrow"></span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li class="nav-item  ">
+                                <a href="/Vendors/Index" class="nav-link ">
+                                    <span class="title">Add New Vendor</span>
+                                </a>
+                            </li>
+                            <li class="nav-item  ">
+                                <a href="/Vendors/List" class="nav-link ">
+                                    <span class="title">Vendors Listing</span>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item" id="liTrucking">
+                        <a href="/TruckingCompanies/Index" class="nav-link nav-toggle">
+                            <i class="fa fa-retweet"></i>
+                            <span class="title">Trucking Companies</span>
+                            <span class="arrow"></span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li class="nav-item  ">
+                                <a href="/TruckingCompanies/Index" class="nav-link ">
+                                    <span class="title">Add Trucking Company</span>
+                                </a>
+                            </li>
+
+                            <li class="nav-item  ">
+                                <a href="/TruckingCompanies/list" class="nav-link ">
+                                    <span class="title">Trucking Companies Listing</span>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item" id="liCo-ordination">
+                        <a href="/CoordinationCompanies/Index" class="nav-link nav-toggle">
+                            <i class="fa fa-building-o"></i>
+                            <span class="title">Coordination Companies</span>
+                            <span class="arrow"></span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li class="nav-item  ">
+                                <a href="/CoordinationCompanies/List" class="nav-link ">
+                                    <span class="title">Add Coordination Company</span>
+                                </a>
+                            </li>
+                            <li class="nav-item  ">
+                                <a href="/CoordinationCompanies/List" class="nav-link ">
+                                    <span class="title">Coordination Companies Listing</span>
+                                </a>
+
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item" id="liAccessorial_Charges">
+                        <a href="/AccessorialCharges/Index" class="nav-link nav-toggle">
+                            <i class="fa fa-building-o"></i>
+                            <span class="title">Accessorial Charges</span>
+                            <span class="arrow"></span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li class="nav-item  ">
+                                <a href="/AccessorialCharges/List" class="nav-link ">
+                                    <span class="title">Accessorial Charges Listing</span>
+                                </a>
+                            </li>
+                            <li class="nav-item  ">
+                                <a href="/AccessorialCharges/Index" class="nav-link ">
+                                    <span class="title">Add NY Congestion Charge </span>
+                                </a>
+                            </li>
+                            <li class="nav-item  ">
+                                <a href="/AccessorialCharges/Create" class="nav-link ">
+                                    <span class="title"> NY Congestion Charges Listing</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li class="nav-item" id="liStorageType">
+                        <a href="/StorageType/Index" class="nav-link nav-toggle">
+                            <i class="glyphicon glyphicon-hdd"></i>
+                            <span class="title">Storage Type</span>
+                            <span class="arrow"></span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li class="nav-item  ">
+                                <a href="/StorageType/Index" class="nav-link ">
+                                    <span class="title">Add Storage Type</span>
+                                </a>
+                            </li>
+                            <li class="nav-item  ">
+                                <a href="/StorageType/List" class="nav-link ">
+                                    <span class="title">Storage Types Listing</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item" id="liFuelSurcharge">
+                        <a href="/FuelSurcharges/Index" class="nav-link nav-toggle">
+                            <i class="glyphicon glyphicon-usd"></i>
+                            <span class="title">Fuel Surcharges</span>
+                            <span class="arrow"></span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li class="nav-item  ">
+                                <a href="/FuelSurcharges/Index" class="nav-link ">
+                                    <span class="title">Add Fuel Surcharge</span>
+                                </a>
+                            </li>
+                            <li class="nav-item  ">
+                                <a href="/FuelSurcharges/List" class="nav-link ">
+                                    <span class="title">Fuel Surcharges Listing</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item" id="liStorageType">
+                        <a href="/Report/Index" class="nav-link nav-toggle">
+                            <i class="icon-bar-chart"></i>
+                            <span class="title">Report</span>
+                            <span class="arrow"></span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li class="nav-item  ">
+                                <a href="/Report/Index" class="nav-link ">
+                                    <span class="title">Jobs</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <!-- END SIDEBAR MENU -->
+            </div>
+            <!-- END SIDEBAR -->
+        </div>
+		</html>
